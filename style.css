@@ -1,3 +1,77 @@
 /**
 Theme Name: Cheers theme
 */
+@font-face {
+	font-family: 'Gilroy';
+	src: url(‘/fonts/Gilroy-Bold.woff2’) format(‘woff2’),
+		  url(‘/fonts/Gilroy-Bold.ttf’) format(‘truetype’)
+}
+
+#titre {
+  font-family: 'Gilroy';
+  font-weight: 900;
+  font-style: bold;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner,
+.order-form {
+	background: url('./img/quizaccueil.jpg') center fixed no-repeat;
+	background-size: cover;
+	height: 600px;
+  width: auto;
+}
+
+.navbar {
+  background-color: rgba(206, 73, 73, 0.89);
+}
+
+
+#bouton {
+  color: #000000;
+	transition: 0.5s;
+  background-color: #EBE3D5;
+}
+
+#boutonnav {
+  color: #ffffff;
+	transition: 0.5s;
+  background-color: #ffffff00;
+}
+
+#titre3 {
+  color: #ffffff;
+	transition: 0.5s;
+  
+  
+}
+
+
+
+
+
+
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
