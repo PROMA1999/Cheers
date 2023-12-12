@@ -19,7 +19,6 @@
         </div>
     </nav>
 
-
     <!--ACCUEIL QUIZ-->
     <section class="banner d-flex justify-content-center align-items-center">
         <div class="container">
@@ -36,43 +35,141 @@
 
     <!--A PROPOS-->
     <section class="py-5">
-    <div class="card mb-3 align-items-center" style="width: 1300px;">
-        <div class="row g-0">
-        <div class="col-md-4">
-            <img src="img/apropos.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-                Bienvenue sur Cheers
-                <br>
-                Votre compagnon dédié à la santé mentale et au bien-être émotionnel.
-                <br>
-                Notre Mission
-                <br>
-                Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.
-                <br>
-                Quiz interactif personnalisé
-                <br>
-                Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.
-                <br>
-                Ressources Naturelles et Approches Holistiques
-                <br>
-                Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel.
-                <br>
-                Explorez notre Collection
-                <br>
-                Découvrez des articles sur une variété de sujets et des remèdes naturels pour favoriser la santé mentale et émotionnelle.
-                <br>
-                Rejoignez la Communauté Cheers
-                <br>
-                Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie</p>
+        <div class="container container-fluid px-0">
+            <div class="row justify-content-center">
+                <div class="col-md-12 px-0">
+                    <div class="card border-0">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4">
+                                <img src="img/apropos.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="card-title mb-4">Bienvenue sur Cheers !</h2>
+                                    <h3 class="card-title mb-5">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
+                                    <div class="extra-space"></div> <!-- Espacement supplémentaire -->
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <h3 class="card-subtitle mb-4">Notre Mission</h3>
+                                            <p class="card-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
+                                            <h3 class="card-subtitle mb-4">Quiz interactif personnalisé</h3>
+                                            <p class="card-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <h3 class="card-subtitle mb-4">Ressources Naturelles et Approches Holistiques</h3>
+                                            <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel.</p>
+                                            <h3 class="card-subtitle mb-4">Rejoignez la Communauté Cheers</h3>
+                                            <p class="card-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
     </section>
+
+     <!--NOS CONSEILS-->
+     <section>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-md-8 custom-margin-left" id="nosconseils">
+                    <h2 class="mb-4">Découvrez nos conseils</h2>
+                    <h3 class="mb-5">Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="well"> 
+                        <div id="myCarousel" class="carousel slide">
+                        
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            
+                        <div class="item active">
+                            <div class="row-fluid">
+                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            </div><!--/row-fluid-->
+                        </div><!--/item-->
+                        
+                        <div class="item">
+                            <div class="row-fluid">
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            </div><!--/row-fluid-->
+                        </div><!--/item-->
+                        
+                        <div class="item">
+                            <div class="row-fluid">
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            </div><!--/row-fluid-->
+                        </div><!--/item-->
+                        
+                        </div><!--/carousel-inner-->
+                        
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                        </div><!--/myCarousel-->
+                        
+                    </div><!--/well-->   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--NEWSLETTER-->
+
+    <section class="subscription-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <div class="subscription-box">
+                        <h2 class="subscription-title">Abonnez-vous pour être au courant de nos prochains articles !</h2>
+                        <form class="subscription-form">
+                            <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail" required>
+                            <button type="submit" class="btn-submit">Valider</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
     
 </body>
