@@ -20,6 +20,12 @@ body {
   padding: 0;
 }
 
+.navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
+  outline: none;
+  box-shadow: none;
+}
+
+
 .banner,
 .order-form {
 	background-size: cover;
@@ -55,6 +61,23 @@ body {
   z-index: -1;
 }
 
+.fill-height-screen {
+  height: 100vh; /* Remplit l'écran en hauteur */
+}
+
+.fill-height-left {
+  height: 100%; /* Remplit la hauteur de la colonne */
+  width: 100%; /* Recouvre toute la largeur */
+  position: absolute;
+  left: 0; /* Aligne l'image sur le bord gauche */
+  top: 0; /* Aligne l'image en haut de la colonne */
+  object-fit: cover; /* Assure que l'image remplit l'espace sans déformer */
+}
+
+
+.text-sand-background {
+  background-color: #EBE3D5; /* Couleur sable */
+}
 
 
 #titre3 {

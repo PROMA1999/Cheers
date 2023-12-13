@@ -44,47 +44,41 @@
 
 
     <!--A PROPOS-->
-    <section class="py-5">
-        <div class="container container-fluid px-0">
-            <div class="row justify-content-center">
-                <div class="col-md-12 px-0">
-                    <div class="card border-0">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-md-4">
-                                <img 
-                                    src="<?= wp_get_attachment_image_url(10); ?>"
-                                    alt="plage | <?= bloginfo('title'); ?>"
-                                    style="margin-top: 100px;"
-                                    id="apropos-image"
-                                />
+    <section class="py-5 text-sand-background fill-height-screen">
+        <div class="container px-0 h-100 position-relative">
+            <div class="row h-100">
+                <div class="col-md-4 px-0 position-relative">
+                    <?php
+                    $image_url = wp_get_attachment_image_src(10, 'full');
+                    ?>
+                    <img src="<?= $image_url[0]; ?>" alt="plage | <?= bloginfo('title'); ?>" class="fill-height-left" />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body text-sand-background">
+                            
+                        <h2 class="card-title mb-4">Bienvenue sur Cheers !</h2>
+                        <h3 class="card-title mb-5">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
+                        <div class="extra-space">
+                        </div> <!-- Espacement supplémentaire -->
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h3 class="card-subtitle mb-4">Notre Mission</h3>
+                                <p class="card-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
+                                <h3 class="card-subtitle mb-4">Quiz interactif personnalisé</h3>
+                                <p class="card-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h2 class="card-title mb-4">Bienvenue sur Cheers !</h2>
-                                    <h3 class="card-title mb-5">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
-                                    <div class="extra-space"></div> <!-- Espacement supplémentaire -->
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <h3 class="card-subtitle mb-4">Notre Mission</h3>
-                                            <p class="card-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
-                                            <h3 class="card-subtitle mb-4">Quiz interactif personnalisé</h3>
-                                            <p class="card-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h3 class="card-subtitle mb-4">Ressources Naturelles et Approches Holistiques</h3>
-                                            <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel.</p>
-                                            <h3 class="card-subtitle mb-4">Rejoignez la Communauté Cheers</h3>
-                                            <p class="card-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-5">
+                                <h3 class="card-subtitle mb-4">Ressources Naturelles et Approches Holistiques</h3>
+                                <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel.</p>
+                                <h3 class="card-subtitle mb-4">Rejoignez la Communauté Cheers</h3>
+                                <p class="card-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+   </section>
 
     <!--NOS CONSEILS-->
     <section>
