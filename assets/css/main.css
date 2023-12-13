@@ -22,14 +22,14 @@ body {
 
 .banner,
 .order-form {
-	background: url('./img/quizaccueil.jpg') center fixed no-repeat;
 	background-size: cover;
 	height: 600px;
   width: auto;
+  overflow: hidden;
 }
 
 .navbar {
-  background-color: rgba(142, 142, 74, 0.89);
+  background-color: rgba(142, 74, 74, 0);
 }
 
 

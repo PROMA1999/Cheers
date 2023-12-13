@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <body>
-    <nav class="navbar navbar-expand-lg w-100">
+<nav class="navbar navbar-expand-lg" style="position: relative; overflow: hidden;">
+    <div class="navbar-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('<?php echo wp_get_attachment_url(9); ?>'); z-index: -1;"></div>
         <div class= "container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -19,15 +20,15 @@
     </nav>
 
     <!--ACCUEIL QUIZ-->
-    <section class="banner d-flex justify-content-center align-items-center">
+    <section class="banner d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="container-fluid p-0">
+            <?php $image_url = wp_get_attachment_url(9); ?>
             <img 
-                src="<?= wp_get_attachment_image_url(9); ?>"
+                src="<?= $image_url; ?>"
                 alt="plage | <?= bloginfo('title'); ?>"
-                style="margin-top: 100px;"
+                style="margin-top: 100px; width: 100%; height: auto;"
                 id="banner-image"
             />
-
             <!-- Contenu centré au milieu de l'image -->
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
                 <div class="col-12" id="titre">
@@ -41,6 +42,7 @@
 
 
 
+
     <!--A PROPOS-->
     <section class="py-5">
         <div class="container container-fluid px-0">
@@ -49,12 +51,12 @@
                     <div class="card border-0">
                         <div class="row g-0 align-items-center">
                             <div class="col-md-4">
-                            <img 
-                                src="<?= wp_get_attachment_image_url(10); ?>"
-                                alt="plage | <?= bloginfo('title'); ?>"
-                                style="margin-top: 100px;"
-                                id="apropos-image"
-                            />
+                                <img 
+                                    src="<?= wp_get_attachment_image_url(10); ?>"
+                                    alt="plage | <?= bloginfo('title'); ?>"
+                                    style="margin-top: 100px;"
+                                    id="apropos-image"
+                                />
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -131,7 +133,8 @@
                                 </a>
                             </div>
                             <div class="col-md-4">
-                                <a href="#x" class="thumbnail"><img 
+                                <a href="#x" class="thumbnail">
+                                    <img 
                                     src="<?= wp_get_attachment_image_url(11); ?>"
                                     alt="plage | <?= bloginfo('title'); ?>"
                                     style="margin-top: 100px;"
