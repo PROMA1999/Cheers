@@ -46,6 +46,16 @@ body {
   border: 2px solid #ffffff;
 }
 
+#banner-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+
 
 #titre3 {
   color: #ffffff;

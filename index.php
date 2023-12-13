@@ -2,7 +2,6 @@
 <body>
     <nav class="navbar navbar-expand-lg w-100">
         <div class= "container-fluid">
-            <img src="img/logocheers.png" style="height:50%; width: 10%;"/>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item pe-4">
@@ -21,9 +20,16 @@
 
     <!--ACCUEIL QUIZ-->
     <section class="banner d-flex justify-content-center align-items-center">
-        <div class="container">
+        <div class="container-fluid p-0">
+            <img 
+                src="<?= wp_get_attachment_image_url(9); ?>"
+                alt="plage | <?= bloginfo('title'); ?>"
+                style="margin-top: 100px;"
+                id="banner-image"
+            />
+
             <!-- Contenu centré au milieu de l'image -->
-            <div class="row position-absolute top-50 start-50 translate-middle text-center">
+            <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
                 <div class="col-12" id="titre">
                     <h1 class="py-3">Ressentez, évaluez,<br> Santé !</h1>
                     <h3 class="py-5">Évaluez votre santé mentale grâce à notre questionnaire  et trouvez les solutions qui vous correspondent le mieux !</h3>
@@ -33,6 +39,8 @@
         </div>
     </section>
 
+
+
     <!--A PROPOS-->
     <section class="py-5">
         <div class="container container-fluid px-0">
@@ -41,7 +49,12 @@
                     <div class="card border-0">
                         <div class="row g-0 align-items-center">
                             <div class="col-md-4">
-                                <img src="img/apropos.jpg" class="img-fluid rounded-start" alt="...">
+                            <img 
+                                src="<?= wp_get_attachment_image_url(10); ?>"
+                                alt="plage | <?= bloginfo('title'); ?>"
+                                style="margin-top: 100px;"
+                                id="apropos-image"
+                            />
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -71,8 +84,8 @@
         </div>
     </section>
 
-     <!--NOS CONSEILS-->
-     <section>
+    <!--NOS CONSEILS-->
+    <section>
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-md-8 custom-margin-left" id="nosconseils">
@@ -99,10 +112,34 @@
                             
                         <div class="item active">
                             <div class="row-fluid">
-                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
+                            <div class="col-md-4">
+                                <a href="#x" class="thumbnail"><img 
+                                    src="<?= wp_get_attachment_image_url(6); ?>"
+                                    alt="plage | <?= bloginfo('title'); ?>"
+                                    style="margin-top: 100px;"
+                                    id="anxiete-image"
+                                    style="max-width:100%;" />
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#x" class="thumbnail"><img 
+                                    src="<?= wp_get_attachment_image_url(7); ?>"
+                                    alt="plage | <?= bloginfo('title'); ?>"
+                                    style="margin-top: 100px;"
+                                    id="depression-image"
+                                    style="max-width:100%;" />
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#x" class="thumbnail"><img 
+                                    src="<?= wp_get_attachment_image_url(11); ?>"
+                                    alt="plage | <?= bloginfo('title'); ?>"
+                                    style="margin-top: 100px;"
+                                    id="depression-image"
+                                    style="max-width:100%;" />
+                                </a>
+                            </div>
+                            <div class="col-md-4"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
                             </div><!--/row-fluid-->
                         </div><!--/item-->
                         
