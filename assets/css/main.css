@@ -1,12 +1,8 @@
 /*
 Theme Name: Cheers
 */
+@import url("font/stylesheet.css");
 
-@font-face {
-	font-family: 'Gilroy';
-	src: url(‘/fonts/Gilroy-Bold.woff2’) format(‘woff2’),
-		  url(‘/fonts/Gilroy-Bold.ttf’) format(‘truetype’)
-}
 
 #titre {
   font-family: 'Gilroy';
@@ -93,9 +89,6 @@ body {
 
 
 
-
-
-
 fieldset {
   border: none;
   margin-bottom: 20px;
@@ -114,3 +107,37 @@ legend {
   margin-top: 20px;
   font-weight: bold;
 }
+
+footer {
+  background-color: #EBE3D5;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+ 
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ajout pour gérer le passage à la ligne sur les petits écrans */
+}
+ 
+.logo-section {
+  margin-right: 20px; /* Ajout d'une marge à droite pour séparer le logo du texte */
+}
+ 
+.footer-section {
+  flex-basis: 200px; /* Largeur initiale de chaque section */
+  margin: 0 10px; /* Ajout de marges pour séparer les sections */
+}
+ 
+.footer-section h4 {
+  color: #000000;
+  margin-bottom: 10px; /* Ajout d'une marge en bas pour séparer le titre du texte */
+}
+ 
+.footer-section p {
+  color: #000000;
+  text-align: center; /* Centrer le texte par rapport à la H4 */
+}
+ 

@@ -1,26 +1,27 @@
 <?php get_header(); ?>
 <body>
-<nav class="navbar navbar-expand-lg" style="position: relative; overflow: hidden;">
-    <div class="navbar-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('<?php echo wp_get_attachment_url(9); ?>'); z-index: -1;"></div>
-        <div class= "container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item pe-4">
-                        <a class="btn btn-order rounded-pill" id="boutonnav" href="#">Quiz</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                        <a class="btn btn-order rounded-pill" id="boutonnav" href="#">Nos conseils</a>
-                    </li>
-                    <li class="nav-item pe-4">
-                        <a class="btn btn-order rounded-pill" id="boutonnav" href="#">Profil</a>
-                    </li>
-                </ul>
+    <section class="banner d-flex justify-content-center align-items-center" style="position: relative; height: 100vh; overflow: hidden;">
+        <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
+            <div class="navbar-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('<?php echo wp_get_attachment_image_url(9, 'full'); ?>'); z-index: -1;"></div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Vos éléments de navbar ici -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-order rounded-pill" id="boutonnav" href="#">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-order rounded-pill" id="boutonnav" href="#">Nos conseils</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-order rounded-pill" id="boutonnav" href="#">Profil</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!--ACCUEIL QUIZ-->
-    <section class="banner d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <!-- Contenu de la section accueil -->
         <div class="container-fluid p-0">
             <?php $image_url = wp_get_attachment_url(9); ?>
             <img 
@@ -31,15 +32,14 @@
             />
             <!-- Contenu centré au milieu de l'image -->
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
-                <div class="col-12" id="titre">
-                    <h1 class="py-3">Ressentez, évaluez,<br> Santé !</h1>
+                <div class="col-12" >
+                    <h1 class="py-3" id="titre">Ressentez, évaluez,<br> Santé !</h1>
                     <h3 class="py-5">Évaluez votre santé mentale grâce à notre questionnaire  et trouvez les solutions qui vous correspondent le mieux !</h3>
-                    <a href="#" class="btn rounded-50" id="bouton">Commencer le test</a>
+                    <a href="quiz.php" class="btn rounded-50" id="bouton">Commencer le test</a>
                 </div>
             </div>
         </div>
     </section>
-
 
 
 
@@ -90,84 +90,116 @@
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <div class="well"> 
-                        <div id="myCarousel" class="carousel slide">
-                        
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-                        
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-                            
-                        <div class="item active">
-                            <div class="row-fluid">
-                            <div class="col-md-4">
-                                <a href="#x" class="thumbnail"><img 
-                                    src="<?= wp_get_attachment_image_url(6); ?>"
-                                    alt="plage | <?= bloginfo('title'); ?>"
-                                    style="margin-top: 100px;"
-                                    id="anxiete-image"
-                                    style="max-width:100%;" />
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#x" class="thumbnail"><img 
-                                    src="<?= wp_get_attachment_image_url(7); ?>"
-                                    alt="plage | <?= bloginfo('title'); ?>"
-                                    style="margin-top: 100px;"
-                                    id="depression-image"
-                                    style="max-width:100%;" />
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#x" class="thumbnail">
-                                    <img 
-                                    src="<?= wp_get_attachment_image_url(11); ?>"
-                                    alt="plage | <?= bloginfo('title'); ?>"
-                                    style="margin-top: 100px;"
-                                    id="depression-image"
-                                    style="max-width:100%;" />
-                                </a>
-                            </div>
-                            <div class="col-md-4"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            </div><!--/row-fluid-->
-                        </div><!--/item-->
-                        
-                        <div class="item">
-                            <div class="row-fluid">
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            </div><!--/row-fluid-->
-                        </div><!--/item-->
-                        
-                        <div class="item">
-                            <div class="row-fluid">
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                                <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div>
-                            </div><!--/row-fluid-->
-                        </div><!--/item-->
-                        
-                        </div><!--/carousel-inner-->
-                        
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-                        </div><!--/myCarousel-->
-                        
-                    </div><!--/well-->   
+        <section class="pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h3 class="mb-3">Carousel cards title</h3>
+      </div>
+      <div class="col-6 text-right">
+        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="img-fluid" alt="Image 1" src="https://via.placeholder.com/300x200" width="300" height="200">
+                    <div class="card-body">
+                      <h4 class="card-title">Titre de l'article 1</h4>
+                      <p class="card-text">Description de l'article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="img-fluid" alt="Image 2" src="https://via.placeholder.com/300x200" width="300" height="200">
+                    <div class="card-body">
+                      <h4 class="card-title">Titre de l'article 2</h4>
+                      <p class="card-text">Description de l'article 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="img-fluid" alt="Image 3" src="https://via.placeholder.com/300x200" width="300" height="200">
+                    <div class="card-body">
+                      <h4 class="card-title">Titre de l'article 3</h4>
+                      <p class="card-text">Description de l'article 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="img-fluid" alt="Image 4" src="https://via.placeholder.com/300x200" width="300" height="200">
+                    <div class="card-body">
+                      <h4 class="card-title">Titre de l'article 4</h4>
+                      <p class="card-text">Description de l'article 4. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="img-fluid" alt="Image 5" src="https://via.placeholder.com/300x200" width="300" height="200">
+                    <div class="card-body">
+                      <h4 class="card-title">Titre de l'article 5</h4>
+                      <p class="card-text">Description de l'article 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img class="img-fluid" alt="Image 6" src="https://via.placeholder.com/300x200" width="300" height="200">
+                    <div class="card-body">
+                      <h4 class="card-title">Titre de l'article 6</h4>
+                      <p class="card-text">Description de l'article 6. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  // Script pour défilement continu du carousel
+  $('#carouselExampleIndicators2').on('slide.bs.carousel', function (e) {
+    const $e = $(e.relatedTarget);
+    const idx = $e.index();
+    const itemsPerSlide = 1; // Nombre de cartes à afficher à la fois
+
+    const totalItems = $('.carousel-item').length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      const it = itemsPerSlide - (totalItems - idx);
+      for (let i = 0; i < it; i++) {
+        // Ajoute les cartes nécessaires au début si on est à la fin
+        if (e.direction === 'left') {
+          $('.carousel-item').eq(i).appendTo('.carousel-inner');
+        } else {
+          $('.carousel-item').eq(0).appendTo('.carousel-inner');
+        }
+      }
+    }
+  });
+</script>
+        
     </section>
 
     <!--NEWSLETTER-->
