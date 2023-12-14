@@ -1,0 +1,119 @@
+/*
+Theme Name: Cheers
+*/
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url(‘/fonts/Gilroy-Bold.woff2’) format(‘woff2’),
+		  url(‘/fonts/Gilroy-Bold.ttf’) format(‘truetype’)
+}
+
+#titre {
+  font-family: 'Gilroy';
+  font-weight: 900;
+  font-style: bold;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner,
+.order-form {
+	background: url('./img/quizaccueil.jpg') center fixed no-repeat;
+	background-size: cover;
+	height: 600px;
+  width: auto;
+}
+
+.navbar {
+  background-color: rgba(142, 142, 74, 0.89);
+}
+
+
+#bouton {
+  color: #000000;
+	transition: 0.5s;
+  background-color: #EBE3D5;
+}
+
+.boutonnav {
+  color: #ffffff;
+  transition: 0.5s;
+  background-color: #ffffff00;
+  border: 2px solid #ffffff;
+}
+
+
+#titre3 {
+  color: #ffffff;
+	transition: 0.5s;
+  
+  
+}
+
+.custom-margin-left {
+  margin-left: -200px; /* Ajoutez la valeur de la marge souhaitée ici */
+}
+
+
+
+
+
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #EBE3D5;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ajout pour gérer le passage à la ligne sur les petits écrans */
+}
+
+.logo-section {
+  margin-right: 20px; /* Ajout d'une marge à droite pour séparer le logo du texte */
+}
+
+.footer-section {
+  flex-basis: 200px; /* Largeur initiale de chaque section */
+  margin: 0 10px; /* Ajout de marges pour séparer les sections */
+}
+
+.footer-section h4 {
+  color: #000000;
+  margin-bottom: 10px; /* Ajout d'une marge en bas pour séparer le titre du texte */
+}
+
+.footer-section p {
+  color: #000000;
+  text-align: center; /* Centrer le texte par rapport à la H4 */
+}
+
+/* Ajoutez des styles supplémentaires selon vos besoins */
