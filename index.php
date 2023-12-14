@@ -53,7 +53,7 @@
                     ?>
                     <img src="<?= $image_url[0]; ?>" alt="plage | <?= bloginfo('title'); ?>" class="fill-height-left" />
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" >
                     <div class="card-body text-sand-background">
                             
                         <h2 class="card-title mb-4">Bienvenue sur Cheers !</h2>
@@ -62,16 +62,25 @@
                         </div> <!-- Espacement supplémentaire -->
                         <div class="row">
                             <div class="col-md-5">
+                              
                                 <h3 class="card-subtitle mb-4">Notre Mission</h3>
                                 <p class="card-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
+                             
+                              
                                 <h3 class="card-subtitle mb-4">Quiz interactif personnalisé</h3>
                                 <p class="card-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
+                            
                             </div>
+                          
                             <div class="col-md-5">
-                                <h3 class="card-subtitle mb-4">Ressources Naturelles et Approches Holistiques</h3>
-                                <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel.</p>
-                                <h3 class="card-subtitle mb-4">Rejoignez la Communauté Cheers</h3>
+                              
+                                <h3 class="card-subtitle mb-4">Rejoignez Cheers</h3>
                                 <p class="card-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
+                              
+                              
+                                <h3 class="card-subtitle mb-4">Ressources Naturelles et Approches Holistiques</h3>
+                                <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
+                              
                             </div>
                         </div>
                     </div>
