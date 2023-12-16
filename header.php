@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheers</title>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <?php wp_head(); ?>
 </head>
-
 <body>
-    <section class="banner d-flex justify-content-center align-items-center" style="position: relative; height: 100vh; overflow: hidden;">
-        <header style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('<?php echo wp_get_attachment_image_url(9, 'full'); ?>'); z-index: -1;"></div>
-                <nav id="navBar">
-                    <?php $image_url = wp_get_attachment_url(19); ?>
-                    <img src="<?=$image_url;?>" class="logo">
-                    <ul id="buttonNavBar">
-                        <li><button type="button" class="button-custom button-navBar"><a href="quiz.php">Quiz</a></button></li>
-                        <li><button type="button" class="button-custom button-navBar"><a href="">Nos conseil</a></button></li>
-                        <li><button type="button" class="button-custom button-navBar"><a href="">Profil</a></button></li>
-                    </ul>
-                </nav>
+<nav class="navbar navbar-expand-lg w-100" style="position:absolute; z-index:1">
+    <div class= "container-fluid">
+        <<?php $image_url = wp_get_attachment_url(19); ?>
+        <img src="<?=$image_url;?>" class="logo">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item pe-4">
+                    <a class="btn btn-order btn-outline-light rounded-pill" id="boutonnav" href="#">Quiz</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="btn btn-order btn-outline-light rounded-pill" id="boutonnav" href="#">Nos conseils</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="btn btn-order btn-outline-light rounded-pill" id="boutonnav" href="#">Profil</a>
+                </li>
+                </ul>
             </div>
-        </header>
+    </div>
+</nav>
+
