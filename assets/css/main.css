@@ -5,10 +5,14 @@ Theme Name: Cheers
 
 
 #titre {
-  font-family: 'Gilroy';
+  font-family: 'Cascadia Mono SemiBold';
   font-weight: 900;
   font-style: bold;
   color: #ffffff;
+}
+
+.py-5{
+  color:white;
 }
 
 body {
@@ -34,11 +38,56 @@ body {
   background-color: rgba(142, 74, 74, 0);
 }
 
+.titre-background{
+  font-family: "DagnyPro-ExligIta";
+  color:white;
+}
 
 #bouton {
   color: #000000;
 	transition: 0.5s;
   background-color: #EBE3D5;
+}
+
+#navBar{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+
+#buttonNavBar{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.button-custom{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #ffffff00;
+  border-radius: 30px;
+  padding: 0.7% 2%;
+  border: 2px solid white;
+}
+
+.button-navBar{
+  margin-left: 30px;
+  padding: 8px 40px ;
+  font-size: 1em;
+}
+
+.button-custom a {
+  text-decoration: none;
+  color:white;
+
+}
+
+.button-custom:hover{
+  background-color: #ffffff70;
+}
+
+.button-custom:active{
+  color:black;
 }
 
 .boutonnav {
@@ -118,14 +167,16 @@ footer {
 .footer-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap; /* Ajout pour gérer le passage à la ligne sur les petits écrans */
 }
  
-.logo-section {
-  margin-right: 20px; /* Ajout d'une marge à droite pour séparer le logo du texte */
-}
  
+.logo{
+  width:10%;
+  /* filter: invert(100%);  inverse la couleur du logo, la fais passer en noir (blanc de base)*/
+}
+
 .footer-section {
   flex-basis: 200px; /* Largeur initiale de chaque section */
   margin: 0 10px; /* Ajout de marges pour séparer les sections */

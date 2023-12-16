@@ -1,26 +1,4 @@
 <?php get_header(); ?>
-<body>
-    <section class="banner d-flex justify-content-center align-items-center" style="position: relative; height: 100vh; overflow: hidden;">
-        <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
-            <div class="navbar-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('<?php echo wp_get_attachment_image_url(9, 'full'); ?>'); z-index: -1;"></div>
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Vos éléments de navbar ici -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-order rounded-pill" id="boutonnav" href="#">Quiz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-order rounded-pill" id="boutonnav" href="#">Nos conseils</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-order rounded-pill" id="boutonnav" href="#">Profil</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <!-- Contenu de la section accueil -->
         <div class="container-fluid p-0">
             <?php $image_url = wp_get_attachment_url(9); ?>
@@ -33,10 +11,11 @@
             <!-- Contenu centré au milieu de l'image -->
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
                 <div class="col-12" >
-                    <h1 class="py-3" id="titre">Ressentez, évaluez,<br> Santé !</h1>
-                    <h3 class="py-5">Évaluez votre santé mentale grâce à notre questionnaire  et trouvez les solutions qui vous correspondent le mieux !</h3>
-                    <a href="quiz.php" class="btn rounded-50" id="bouton">Commencer le test</a>
-                </div>
+                    <h1 class="py-3" id="titre">Ressentez,évaluez,<br> Santé !</h1>
+                    <h3 class="py-5">Évaluez votre santé mentale grâce à notre questionnaire<br>  et trouvez les solutions qui vous correspondent le mieux !</h3>
+                    <!-- <a href="quiz.php" class="btn rounded-50" id="bouton">Commencer le test</a> -->
+                    <button type="button"  class="button-custom">Commencer le test</button>
+                  </div>
             </div>
         </div>
     </section>
@@ -95,7 +74,7 @@
             <div class="row justify-content-start">
                 <div class="col-md-8 custom-margin-left" id="nosconseils">
                     <h2 class="mb-4">Découvrez nos conseils</h2>
-                    <h3 class="mb-5">Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
+                    <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
                 </div>
             </div>
         </div>

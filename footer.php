@@ -1,10 +1,10 @@
 
 <footer>
     <div class="footer-content">
-            <div class="logo-section">
-                <!-- Ajoutez votre balise d'image pour le logo ici -->
-                <img src="<?php echo get_template_directory_uri(); ?>/votre-logo.png" alt="Logo">
-            </div>
+            <!-- logo sections footer -->
+            <?php $image_url = wp_get_attachment_url(19); ?>
+            <img src="<?=$image_url;?>" class="logo">
+
             <div class="footer-section">
                 <h6>info@cheers.be</h6>
                 <h6>+324867594</h6>
