@@ -11,10 +11,6 @@ Theme Name: Cheers
   color: #ffffff;
 }
 
-.py-5{
-  color:white;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -47,47 +43,6 @@ body {
   color: #000000;
 	transition: 0.5s;
   background-color: #EBE3D5;
-}
-
-#navBar{
-  display: flex;
-  justify-content: space-between;
-  padding: 2% 5%;
-}
-
-#buttonNavBar{
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-
-.button-custom{
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background-color: #ffffff00;
-  border-radius: 30px;
-  padding: 0.7% 2%;
-  border: 2px solid white;
-}
-
-.button-navBar{
-  margin-left: 30px;
-  padding: 8px 40px ;
-  font-size: 1em;
-}
-
-.button-custom a {
-  text-decoration: none;
-  color:white;
-
-}
-
-.button-custom:hover{
-  background-color: #ffffff70;
-}
-
-.button-custom:active{
-  color:black;
 }
 
 .boutonnav {
