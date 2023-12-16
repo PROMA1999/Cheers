@@ -17,8 +17,8 @@
             <!-- Contenu centré au milieu de l'image -->
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
                 <div class="col-12" >
-                    <h1 class="py-3" id="titre">Ressentez,évaluez,<br> Santé !</h1>
-                    <h3 class="py-5">Évaluez votre santé mentale grâce à notre questionnaire<br>  et trouvez les solutions qui vous correspondent le mieux !</h3>
+                    <h1 id="titre">Ressentez,évaluez,<br> Santé !</h1>
+                    <h3 class="py-5 white-color">Évaluez votre santé mentale grâce à notre questionnaire<br>  et trouvez les solutions qui vous correspondent le mieux !</h3>
                     <!-- <a href="quiz.php" class="btn rounded-50" id="bouton">Commencer le test</a> -->
                     <a href="" class="btn btn-order btn-outline-light rounded-pill ">Commencer le test</a>
                   </div>
@@ -41,30 +41,30 @@
                 <div class="col-md-8" >
                     <div class="card-body text-sand-background">
                             
-                        <h2 class="card-title mb-4">Bienvenue sur Cheers !</h2>
+                        <h2 class="card-title mb-4 vert-a-propos">Bienvenue sur Cheers !</h2>
                         <h3 class="card-title mb-5">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
                         <div class="extra-space">
                         </div> <!-- Espacement supplémentaire -->
                         <div class="row">
                             <div class="col-md-5">
                               
-                                <h3 class="card-subtitle mb-4">Notre Mission</h3>
+                                <h3 class="card-subtitle mb-4 orange-a-propos">Notre Mission</h3>
                                 <p class="card-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
                              
                               
-                                <h3 class="card-subtitle mb-4">Quiz interactif personnalisé</h3>
-                                <p class="card-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
+                                <h3 class="card-subtitle mb-4 brun-a-propos">Quiz interactif personnalisé</h3>
+                                <p class="card-text mb-5 brun-a-propos">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
                             
                             </div>
                           
                             <div class="col-md-5">
                               
-                                <h3 class="card-subtitle mb-4">Rejoignez Cheers</h3>
+                                <h3 class="card-subtitle mb-4 orange-a-propos">Rejoignez Cheers</h3>
                                 <p class="card-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
                               
                               
-                                <h3 class="card-subtitle mb-4">Ressources Naturelles et Approches Holistiques</h3>
-                                <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
+                                <h3 class="card-subtitle mb-4 brun-a-propos">Ressources Naturelles et Approches Holistiques</h3>
+                                <p class="card-text mb-5 brun-a-propos">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
                               
                             </div>
                         </div>
@@ -79,7 +79,7 @@
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-md-8 ">
-                    <h2 class="mb-4">Découvrez nos conseils</h2>
+                    <h2 class="mb-4 vert-a-propos">Découvrez nos conseils</h2>
                     <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
                 </div>
             </div>

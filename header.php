@@ -12,20 +12,19 @@
 <nav class="navbar navbar-expand-lg w-100" style="position:absolute; z-index:1">
     <div class= "container-fluid">
         <<?php $image_url = wp_get_attachment_url(19); ?>
-        <img src="<?=$image_url;?>" class="logo">
+            <img src="<?=$image_url;?>" class="logo"/>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item pe-4">
-                    <a class="btn btn-order btn-outline-light rounded-pill" id="boutonnav" href="#">Quiz</a>
+                    <a class="btn btn-order btn-outline-light rounded-pill" href="quiz.php">Quiz</a>
                 </li>
                 <li class="nav-item pe-4">
-                    <a class="btn btn-order btn-outline-light rounded-pill" id="boutonnav" href="#">Nos conseils</a>
+                    <a class="btn btn-order btn-outline-light rounded-pill"  href="#">Nos conseils</a>
                 </li>
                 <li class="nav-item pe-4">
-                    <a class="btn btn-order btn-outline-light rounded-pill" id="boutonnav" href="#">Profil</a>
+                    <a class="btn btn-order btn-outline-light rounded-pill"  href="#">Profil</a>
                 </li>
                 </ul>
             </div>
     </div>
 </nav>
-

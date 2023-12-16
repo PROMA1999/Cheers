@@ -5,8 +5,9 @@ Theme Name: Cheers
 
 
 #titre {
-  font-family: 'Cascadia Mono SemiBold';
-  font-weight: 900;
+  font-family: 'Gilroy';
+  font-weight:900;
+  font-size: 500%;
   font-style: bold;
   color: #ffffff;
 }
@@ -20,7 +21,6 @@ body {
   outline: none;
   box-shadow: none;
 }
-
 
 .banner,
 .order-form {
@@ -37,12 +37,6 @@ body {
 .titre-background{
   font-family: "DagnyPro-ExligIta";
   color:white;
-}
-
-#bouton {
-  color: #000000;
-	transition: 0.5s;
-  background-color: #EBE3D5;
 }
 
 .boutonnav {
@@ -83,14 +77,27 @@ body {
 #titre3 {
   color: #ffffff;
 	transition: 0.5s;
-  
-  
 }
 
 .custom-margin-left {
   margin-left: -200px; /* Ajoutez la valeur de la marge souhaitée ici */
 }
 
+.white-color{
+  color:white;
+}
+
+.orange-a-propos{
+  color: #FF8C66;
+}
+
+.vert-a-propos{
+  color:#67844C;
+}
+
+.brun-a-propos{
+  color:#BFA98C;
+}
 
 
 fieldset {

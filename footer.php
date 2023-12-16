@@ -2,8 +2,8 @@
 <footer>
     <div class="footer-content">
             <!-- logo sections footer -->
-            <?php $image_url = wp_get_attachment_url(19); ?>
-            <img src="<?=$image_url;?>" class="logo">
+            <?php $image_url = wp_get_attachment_url(56); ?>
+            <img src="<?=$image_url;?>" class="logo"/>
 
             <div class="footer-section">
                 <h6>info@cheers.be</h6>
