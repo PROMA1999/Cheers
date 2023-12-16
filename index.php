@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+
+    <section class="banner d-flex justify-content-center align-items-center " style="position: relative; height: 100vh; overflow: hidden;">
+        <header style="position: absolute; overflow: hidden;">
+            <div style="position: absolute; background-image: url('<?php echo wp_get_attachment_image_url(9, 'full'); ?>'); z-index: -1;"></div>
+            </div>
+        </header>
         <!-- Contenu de la section accueil -->
         <div class="container-fluid p-0">
             <?php $image_url = wp_get_attachment_url(9); ?>
@@ -14,7 +20,7 @@
                     <h1 class="py-3" id="titre">Ressentez,évaluez,<br> Santé !</h1>
                     <h3 class="py-5">Évaluez votre santé mentale grâce à notre questionnaire<br>  et trouvez les solutions qui vous correspondent le mieux !</h3>
                     <!-- <a href="quiz.php" class="btn rounded-50" id="bouton">Commencer le test</a> -->
-                    <button type="button"  class="button-custom">Commencer le test</button>
+                    <a href="" class="btn btn-order btn-outline-light rounded-pill ">Commencer le test</a>
                   </div>
             </div>
         </div>
@@ -72,7 +78,7 @@
     <section>
         <div class="container">
             <div class="row justify-content-start">
-                <div class="col-md-8 custom-margin-left" id="nosconseils">
+                <div class="col-md-8 ">
                     <h2 class="mb-4">Découvrez nos conseils</h2>
                     <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
                 </div>
@@ -200,32 +206,15 @@
                         <h2 class="subscription-title">Abonnez-vous pour être au courant de nos prochains articles !</h2>
                         <form class="subscription-form">
                             <input type="email" class="form-control" placeholder="Entrez votre adresse e-mail" required>
-                            <button type="submit" class="btn-submit">Valider</button>
+                            <button type="submit" class="btn btn-outline-light">Valider</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    
-    
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 </body>
 
 <?php get_footer(); ?>
