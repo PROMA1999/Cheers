@@ -49,6 +49,7 @@ body {
 #banner-image {
   max-width: 100%;
   width: 100%;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1)),url(/);
   height: auto;
   object-fit: cover;
   position: relative;
@@ -154,3 +155,100 @@ footer {
   text-align: center; /* Centrer le texte par rapport à la H4 */
 }
  
+
+
+
+
+/*Style-quiz*/
+
+.body-quiz {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.quiz-container {
+  max-width: 800px;
+  padding: 40px;
+  background-color: #ebe3d5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.mb-3 p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.question-container {
+  display: none;
+}
+
+.infos-questions {
+  margin-bottom: 60px;
+}
+
+.question-number{
+  margin-bottom: 15px;
+  color: #ef7d53;
+}
+
+.active-question {
+  display: block;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.next-question {
+    display: block;
+    margin: 40px auto 20px; /* Augmenter la marge supérieure pour descendre le bouton */
+  }
+
+
+  .form-check {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Arrondir les coins du cadre */
+    width: fit-content; /* Adapter la largeur du cadre au contenu */
+    margin-left: auto; /* Centrer le cadre */
+    margin-right: auto;
+  }
+
+  .form-check-input {
+    margin-right: 5px;
+  }   
+
+ 
+#bouton {
+    color: #ffffff;
+    transition: 0.5s;
+    background-color: #67844C;
+    border-width: 3px;
+    border-radius: 50px; /* Modification pour un arrondi plus prononcé */
+    border-color: #67844C; /* Assurez-vous que la couleur de la bordure correspond au fond */
+    padding: 10px 20px; /* Ajout de padding pour une meilleure apparence */
+    font-size: 16px; /* Taille de police ajustable selon vos besoins */
+    cursor: pointer; /* Change le curseur en main lors du survol */
+}
+
+#result {
+  background-color: #FF8C66;
+  padding: 25px;
+  height: 60%;
+  width: 80%;
+  border-radius: 15px;
+}

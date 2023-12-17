@@ -23,7 +23,7 @@
                 <p>Instagram | Facebook</p>
             </div>
         </div>
-    <?php wp_footer(); ?>
 </footer>
+<?php wp_footer(); ?>
 </body>
 </html>
