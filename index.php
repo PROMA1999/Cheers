@@ -17,8 +17,7 @@
                 <div class="col-12" >
                     <h1 id="titre">Ressentez,évaluez,<br> Santé !</h1>
                     <h3 class="py-5 white-color">Évaluez votre santé mentale grâce à notre questionnaire<br>  et trouvez les solutions qui vous correspondent le mieux !</h3>
-                    <!-- <a href="quiz.php" class="btn rounded-50" id="bouton">Commencer le test</a> -->
-                    <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill ">Commencer le test</a>
+                    <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill">Commencer le test</a>
                   </div>
             </div>
         </div>
@@ -70,129 +69,108 @@
                 </div>
             </div>
         </div>
-   </section>
+    </section>
 
     <!--NOS CONSEILS-->
-    <section>
-        <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-md-8 ">
-                    <h2 class="mb-4 vert-a-propos">Découvrez nos conseils</h2>
-                    <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
-                </div>
-            </div>
+    <section class="py-5 fill-height-screen">
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-md-8 ">
+            <h2 class="mb-4 vert-a-propos">Découvrez nos conseils</h2>
+            <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
+          </div>
         </div>
-        <section class="pt-5 pb-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <h3 class="mb-3">Carousel cards title</h3>
       </div>
-      <div class="col-6 text-right">
-        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
-          <i class="fa fa-arrow-left"></i>
-        </a>
-        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
-          <i class="fa fa-arrow-right"></i>
-        </a>
-      </div>
-      <div class="col-12">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <img class="img-fluid" alt="Image 1" src="https://via.placeholder.com/300x200" width="300" height="200">
-                    <div class="card-body">
-                      <h4 class="card-title">Titre de l'article 1</h4>
-                      <p class="card-text">Description de l'article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+      <div class="container pt-5 pb-5">
+        <div class="row">      
+          <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="Image 1" src="https://via.placeholder.com/300x200" width="300" height="200">
+                        <div class="card-body">
+                          <h4 class="card-title">Titre de l'article 1</h4>
+                          <p class="card-text">Description de l'article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="Image 2" src="https://via.placeholder.com/300x200" width="300" height="200">
+                        <div class="card-body">
+                          <h4 class="card-title">Titre de l'article 2</h4>
+                          <p class="card-text">Description de l'article 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="Image 3" src="https://via.placeholder.com/300x200" width="300" height="200">
+                        <div class="card-body">
+                          <h4 class="card-title">Titre de l'article 3</h4>
+                          <p class="card-text">Description de l'article 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <img class="img-fluid" alt="Image 2" src="https://via.placeholder.com/300x200" width="300" height="200">
-                    <div class="card-body">
-                      <h4 class="card-title">Titre de l'article 2</h4>
-                      <p class="card-text">Description de l'article 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <img class="img-fluid" alt="Image 3" src="https://via.placeholder.com/300x200" width="300" height="200">
-                    <div class="card-body">
-                      <h4 class="card-title">Titre de l'article 3</h4>
-                      <p class="card-text">Description de l'article 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <img class="img-fluid" alt="Image 4" src="https://via.placeholder.com/300x200" width="300" height="200">
-                    <div class="card-body">
-                      <h4 class="card-title">Titre de l'article 4</h4>
-                      <p class="card-text">Description de l'article 4. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <img class="img-fluid" alt="Image 5" src="https://via.placeholder.com/300x200" width="300" height="200">
-                    <div class="card-body">
-                      <h4 class="card-title">Titre de l'article 5</h4>
-                      <p class="card-text">Description de l'article 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card">
-                    <img class="img-fluid" alt="Image 6" src="https://via.placeholder.com/300x200" width="300" height="200">
-                    <div class="card-body">
-                      <h4 class="card-title">Titre de l'article 6</h4>
-                      <p class="card-text">Description de l'article 6. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img class="img-fluid" alt="Image 4" src="https://via.placeholder.com/300x200" width="300" height="200">
+                        <div class="card-body">
+                          <h4 class="card-title">Titre de l'article 4</h4>
+                          <p class="card-text">Description de l'article 4. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-12 text-center">
+            <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<script>
-  // Script pour défilement continu du carousel
-  $('#carouselExampleIndicators2').on('slide.bs.carousel', function (e) {
-    const $e = $(e.relatedTarget);
-    const idx = $e.index();
-    const itemsPerSlide = 1; // Nombre de cartes à afficher à la fois
-
-    const totalItems = $('.carousel-item').length;
-
-    if (idx >= totalItems - (itemsPerSlide - 1)) {
-      const it = itemsPerSlide - (totalItems - idx);
-      for (let i = 0; i < it; i++) {
-        // Ajoute les cartes nécessaires au début si on est à la fin
-        if (e.direction === 'left') {
-          $('.carousel-item').eq(i).appendTo('.carousel-inner');
-        } else {
-          $('.carousel-item').eq(0).appendTo('.carousel-inner');
-        }
-      }
-    }
-  });
-</script>
-        
     </section>
+
+
+    <script>
+      // Script pour défilement continu du carousel
+      $('#carouselExampleIndicators2').on('slide.bs.carousel', function (e) {
+        const $e = $(e.relatedTarget);
+        const idx = $e.index();
+        const itemsPerSlide = 1; // Nombre de cartes à afficher à la fois
+
+        const totalItems = $('.carousel-item').length;
+
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          const it = itemsPerSlide - (totalItems - idx);
+          for (let i = 0; i < it; i++) {
+            // Ajoute les cartes nécessaires au début si on est à la fin
+            if (e.direction === 'left') {
+              $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            } else {
+              $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+          }
+        }
+      });
+    </script>
+
+
 
     <!--NEWSLETTER-->
 
@@ -211,8 +189,8 @@
             </div>
         </div>
     </section>
-   
+    
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 
 <?php get_footer(); ?>
