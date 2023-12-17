@@ -50,8 +50,8 @@
                                 <p class="card-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
                              
                               
-                                <h3 class="card-subtitle mb-4 brun-a-propos">Quiz interactif personnalisé</h3>
-                                <p class="card-text mb-5 brun-a-propos">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
+                                <h3 class="card-subtitle mb-4 orange-a-propos">Quiz interactif personnalisé</h3>
+                                <p class="card-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
                             
                             </div>
                           
@@ -61,8 +61,8 @@
                                 <p class="card-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
                               
                               
-                                <h3 class="card-subtitle mb-4 brun-a-propos">Ressources Naturelles et Approches Holistiques</h3>
-                                <p class="card-text mb-5 brun-a-propos">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
+                                <h3 class="card-subtitle mb-4 orange-a-propos">Ressources Naturelles et Approches Holistiques</h3>
+                                <p class="card-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
                               
                             </div>
                         </div>

@@ -155,9 +155,9 @@
   if (anyCSelected) {
     resultText = 'Votre santé mentale à l\'air stable';
   } else if (anyBSelected) {
-    resultText = 'Votre évaluation suggère que vous montrez des signes de mal-être, il peut être utile de rechercher un soutien ou une aide professionnelle.';
+    resultText = 'Votre évaluation indique un mélange de signes';
   } else {
-    resultText = 'Votre évaluation suggère qu\'il peut y avoir des signes de problèmes sérieux de santé mentale. Il est fortement recommandé de consulter un professionnel de la santé mentale pour une évaluation approfondie.Votre évaluation suggère que votre santé mentale semble normale.';
+    resultText = 'Vous montrez des signes de mal-être';
   }
 
   // Affichage du résultat
