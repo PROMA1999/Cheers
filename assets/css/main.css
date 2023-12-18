@@ -32,14 +32,14 @@ body {
 
 .logo{
   width: 12%;
-    margin: 6px; /* Ajoute une marge autour du logo */
-    padding: 6px; /* Ajoute un espacement intérieur autour du logo */
+  margin: 6px; /* Ajoute une marge autour du logo */
+  padding: 6px; /* Ajoute un espacement intérieur autour du logo */
 }
 
 .logonoir{
   width:50%;
-    margin: 5px; /* Ajoute une marge autour du logo */
-    padding: 5px; /* Ajoute un espacement intérieur autour du logo */
+  margin: 5px; /* Ajoute une marge autour du logo */
+  padding: 5px; /* Ajoute un espacement intérieur autour du logo */
 }
 
 .boutonnav {
@@ -329,12 +329,16 @@ h1 {
 #result {
   background-color: #ebe3d5;
   padding: 25px;
-  height: 60%;
-  width: 80%;
   border-radius: 15px;
   margin-top: 20px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%; /* Hauteur de la fenêtre de visualisation */
+  width: 50%; /* Largeur complète */
 }
+
 
 /*fieldset {
   border: none;

@@ -119,9 +119,6 @@
           <button type="button" class="btn btn-primary next-question" id="bouton">Voir les résultats</button>
         </div>
       </div>
-      <div class="body-result">
-        <div id="result" class="mt-4"></div>
-      </div>
     </form>
   </div>
 

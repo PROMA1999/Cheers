@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <nav class="navbar navbar-expand-lg w-100" style="position:absolute; z-index:1">
+    <nav class="navbar navbar-expand-lg" style="position:absolute; z-index:1">
         <div class= "container-fluid">
             <a href="<?= home_url('/index'); ?>">
                 <?php $image_url = wp_get_attachment_url(8); ?>
