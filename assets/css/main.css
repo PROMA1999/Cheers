@@ -162,11 +162,16 @@ body {
 
 /* NEWSLETTER */
 
-.subscription-section{
+.subscription-section {
   background-color: #67844C;
-  padding: 50px; /* Augmente le padding pour plus d'espace autour du contenu */
-  min-height: 530px; /* Optionnel: Définit une hauteur minimale pour la section */
+  padding: 50px;
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
 
 .subscription-title{
   color: #ffffff;
@@ -309,13 +314,13 @@ h1 {
 }
 
 #result {
-  background-color: #ef7d53;
+  background-color: #ebe3d5;
   padding: 25px;
   height: 60%;
   width: 80%;
   border-radius: 15px;
   margin-top: 20px;
-  font-weight: bold;
+
 }
 
 /*fieldset {

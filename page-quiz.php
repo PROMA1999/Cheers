@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header2(); ?>
 
 <section class="body-quiz">
   <div class="quiz-container">
@@ -153,7 +153,9 @@
   const anyBSelected = answers.some(answer => answer.includes('b'));
 
   if (anyCSelected) {
-    resultText = 'Votre santé mentale à l\'air stable';
+    resultText = `<h2>Votre santé mentale à l'air stable</h2>
+                <p>Vos réponses suggèrent que votre bien-être mental semble normal. Cependant, gardez à l'esprit l'importance de prendre soin de votre santé mentale. Continuez à vous engager dans des activités qui vous procurent du bien-être et restez attentif à tout changement ou toute détérioration potentielle.</p>
+                <p>Bravo ! Votre évaluation suggère que votre bien-être mental semble stable. Continuez à explorer nos articles sur la santé pour enrichir vos connaissances et maintenir votre équilibre psychologique.</p>`;
   } else if (anyBSelected) {
     resultText = 'Votre évaluation indique un mélange de signes';
   } else {
