@@ -1,4 +1,4 @@
-<?php get_header2(); ?>
+<?php include 'header2.php'; ?>
 
 <section class="body-quiz">
   <div class="quiz-container">
@@ -157,9 +157,13 @@
                 <p>Vos réponses suggèrent que votre bien-être mental semble normal. Cependant, gardez à l'esprit l'importance de prendre soin de votre santé mentale. Continuez à vous engager dans des activités qui vous procurent du bien-être et restez attentif à tout changement ou toute détérioration potentielle.</p>
                 <p>Bravo ! Votre évaluation suggère que votre bien-être mental semble stable. Continuez à explorer nos articles sur la santé pour enrichir vos connaissances et maintenir votre équilibre psychologique.</p>`;
   } else if (anyBSelected) {
-    resultText = 'Votre évaluation indique un mélange de signes';
+    resultText = `<h2>Votre évaluation indique un mélange de signes</h2>
+                <p>Votre évaluation suggère quelques zones de préoccupation mais aussi des aspects positifs. Bien que ces signaux puissent ne pas indiquer une urgence immédiate, vous pourriez bénéficier d'un soutien supplémentaire. Prendre du temps pour vous-même, discuter avec des proches ou rechercher l'aide d'un professionnel de la santé mentale peuvent contribuer à améliorer votre bien-être.</p>
+                <p>N'oubliez pas que prendre soin de sa santé mentale est essentiel. Consultez nos conseils sur la santé mentale et nos remèdes naturels pour découvrir des astuces et des conseils pour cultiver votre bien-être mental au quotidien.</p>`;
   } else {
-    resultText = 'Vous montrez des signes de mal-être';
+    resultText = `<h2>Vous montrez des signes de mal-être</h2>
+                <p>Votre évaluation suggère qu'il peut y avoir des signes de problèmes sérieux de santé mentale. Il est essentiel de ne pas sous-estimer ces signaux. Il est fortement recommandé de consulter un professionnel de la santé mentale pour une évaluation approfondie et un accompagnement adapté. Prendre cette étape peut être un premier pas crucial vers une meilleure santé mentale.</p>
+                <p>Bien que cela ne résoudra peut-être pas vos problèmes, nous vous encourageons également à consulter nos conseils pour favoriser l'amélioration de vos problèmes.</p>`;
   }
 
   // Affichage du résultat
@@ -175,10 +179,10 @@
   document.querySelector('.restart-quiz').addEventListener('click', restartQuiz);
 }
 
-function restartQuiz() {
+/*function restartQuiz() {
   // Recharger la page pour recommencer le quiz
   window.location.reload();
-}
+}*/
 
 
   nextButtons.forEach((button, index) => {

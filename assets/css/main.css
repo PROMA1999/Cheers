@@ -56,9 +56,22 @@ body {
 
 }
 
+.btn-order2 {
+  padding: 15px 30px; /* Ajuste le padding pour augmenter l'espace intérieur */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne suivante */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce pour le changement de couleur et de fond */
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
 .btn-order:hover, .btn-order:focus {
   color: #ffffff; /* Couleur du texte */
   background-color: rgba(255, 255, 255, 0.250); /* Fond blanc avec opacité réduite */
+}
+
+.btn-order2:hover, .btn-order2:focus {
+  color: #ef7d53; /* Couleur du texte */
+  border-color: #ef7d53;
+  background-color: rgba(255, 255, 255, 0); /* Fond blanc avec opacité réduite */
 }
 
 

@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item pe-4">
-                        <a class="btn btn-order btn-outline-light rounded-pill" href="<?= home_url('/quiz'); ?>">Quiz</a>
+                        <a class="btn btn-order2 btn-outline-dark rounded-pill" href="<?= home_url('/quiz'); ?>">Quiz</a>
                     </li>
                     <li class="nav-item pe-4">
-                        <a class="btn btn-order btn-outline-light rounded-pill" href="#">Nos conseils</a>
+                        <a class="btn btn-order2 btn-outline-dark rounded-pill" href="#">Nos conseils</a>
                     </li>
                     <li class="nav-item pe-4">
-                        <a class="btn btn-order btn-outline-light rounded-pill" href="#">Profil</a>
+                        <a class="btn btn-order2 btn-outline-dark rounded-pill" href="#">Profil</a>
                     </li>
                 </ul>
             </div>
