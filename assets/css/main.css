@@ -13,8 +13,10 @@ Theme Name: Cheers
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  max-width: 1920px;
 }
 
 .navbar {
@@ -38,8 +40,9 @@ body {
 
 .logonoir{
   width:50%;
-  margin: 5px; /* Ajoute une marge autour du logo */
-  padding: 5px; /* Ajoute un espacement intérieur autour du logo */
+  height: 50%;
+  margin: 6px; /* Ajoute une marge autour du logo */
+  padding: 6px; /* Ajoute un espacement intérieur autour du logo */
 }
 
 .boutonnav {
@@ -104,6 +107,12 @@ body {
   height: 100vh;
 }
 
+.fill-height-screen-apropos {
+  height: 100vh;
+  background-color: #EBE3D5;
+}
+
+
 .fill-height-left {
   height: 100%; 
   width: 100%; 
@@ -113,8 +122,12 @@ body {
   object-fit: cover;
 }
 
+.row-apropos{
+  --bs-gutter-x: 0;
+}
 
 .text-sand-background {
+
   background-color: #EBE3D5;
 }
 
@@ -145,6 +158,7 @@ body {
 
 .container-card {
   position: relative;
+
 }
 
 .card-title{

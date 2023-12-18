@@ -26,9 +26,9 @@
 
 
     <!--A PROPOS-->
-    <section class="py-5 fill-height-screen">
-      <div class="container px-0 h-100 position-relative">
-            <div class="row h-100">
+    <section class="fill-height-screen-apropos">
+      <div class="px-0 h-100 position-relative">
+            <div class="row row-apropos h-100">
                 <div class="col-md-4 px-0 position-relative">
                     <?php
                     $image_url = wp_get_attachment_image_src(10, 'full');
@@ -36,12 +36,12 @@
                     <img src="<?= $image_url[0]; ?>" alt="plage | <?= bloginfo('title'); ?>" class="fill-height-left"/>
                 </div>
                 <div class="col-md-8" >
-                    <div class="card-body text-sand-background">
+                    <div class="card-body p-5">
                             
                         <h2 class="sub-title mb-4 vert-a-propos">Bienvenue sur Cheers !</h2>
                         <h3 class="subsub-title mb-5">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
                         <div class="extra-space">
-                        </div> Espacement supplémentaire
+                        </div>
                         <div class="row">
                             <div class="col-md-5">
                               

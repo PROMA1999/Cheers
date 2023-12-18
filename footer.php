@@ -3,7 +3,7 @@
     <div class="footer-content">
         <!-- logo sections footer -->
         <div class="col-lg-2 col-12 footer-section"> 
-            <?php $image_url = wp_get_attachment_url(31); ?>
+            <?php $image_url = wp_get_attachment_url(35); ?>
             <img src="<?=$image_url;?>" class="logonoir"/>
         </div>
         <div class="col-lg-2 col-12 footer-section">
