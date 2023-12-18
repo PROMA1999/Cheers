@@ -166,7 +166,7 @@
   // Affichage du résultat
   document.body.innerHTML = `
   <?php include 'header2.php'; ?>
-    <div class="container align-items-center">
+    <div class="container py-5">
       <div id="result" class="mt-4">
         <p>${resultText}</p>
       </div>

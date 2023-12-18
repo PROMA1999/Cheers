@@ -337,6 +337,13 @@ h1 {
   max-width: 600px;
 }
 
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 
 /*fieldset {
   border: none;
