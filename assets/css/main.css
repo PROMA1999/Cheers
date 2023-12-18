@@ -315,28 +315,25 @@ h1 {
 
  
 #bouton {
-    color: #ffffff;
-    transition: 0.5s;
-    background-color: #67844C;
-    border-width: 3px;
-    border-radius: 50px; /* Modification pour un arrondi plus prononcé */
-    border-color: #67844C; /* Assurez-vous que la couleur de la bordure correspond au fond */
-    padding: 10px 20px; /* Ajout de padding pour une meilleure apparence */
-    font-size: 16px; /* Taille de police ajustable selon vos besoins */
-    cursor: pointer; /* Change le curseur en main lors du survol */
+  color: #ffffff;
+  transition: 0.5s;
+  background-color: #67844C;
+  border-width: 3px;
+  border-radius: 50px; /* Modification pour un arrondi plus prononcé */
+  border-color: #67844C; /* Assurez-vous que la couleur de la bordure correspond au fond */
+  padding: 10px 20px; /* Ajout de padding pour une meilleure apparence */
+  font-size: 16px; /* Taille de police ajustable selon vos besoins */
+  cursor: pointer; /* Change le curseur en main lors du survol */
 }
 
 #result {
   background-color: #ebe3d5;
-  padding: 25px;
   border-radius: 15px;
-  margin-top: 20px;
   display: flex;
-  
   justify-content: center;
   flex-direction: column;
-  height: 50%; /* Hauteur de la fenêtre de visualisation */
-  width: 50%; /* Largeur complète */
+  height: auto; /* Hauteur de la fenêtre de visualisation */
+  width: 80%; /* Largeur complète */
 }
 
 
