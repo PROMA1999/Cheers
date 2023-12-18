@@ -165,12 +165,14 @@
 
   // Affichage du résultat
   document.body.innerHTML = `
-    <div class="container">
+  <?php include 'header2.php'; ?>
+    <div class="container align-items-center">
       <div id="result" class="mt-4">
         <p>${resultText}</p>
-        <button class="btn btn-primary restart-quiz">Recommencer le quizz</button>
       </div>
     </div>`;
+
+
 
   // Ajouter un gestionnaire d'événements pour recommencer le quiz
   document.querySelector('.restart-quiz').addEventListener('click', restartQuiz);

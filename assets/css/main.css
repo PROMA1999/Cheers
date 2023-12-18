@@ -243,7 +243,6 @@ footer {
 /*Style-quiz*/
 
 .body-quiz {
-  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -328,12 +327,14 @@ h1 {
 
 #result {
   background-color: #ebe3d5;
+  padding: 40px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: auto; /* Hauteur de la fenêtre de visualisation */
   width: 80%; /* Largeur complète */
+  max-width: 600px;
 }
 
 
