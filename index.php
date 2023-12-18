@@ -15,8 +15,8 @@
             <!-- Contenu centré au milieu de l'image -->
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
                 <div class="col-12" >
-                    <h1 id="titre">Ressentez,évaluez,<br> Santé !</h1>
-                    <h3 class="py-5 white-color">Évaluez votre santé mentale grâce à notre questionnaire<br>  et trouvez les solutions qui vous correspondent le mieux !</h3>
+                    <h1 id="titre-blanc">RESSENTEZ, ÉVALUEZ,<br> SANTÉ !</h1>
+                    <h3 id="titre-blanc">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
                     <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill">Commencer le test</a>
                   </div>
             </div>
@@ -28,47 +28,44 @@
     <!--A PROPOS-->
     <section class="fill-height-screen-apropos">
       <div class="px-0 h-100 position-relative">
-            <div class="row row-apropos h-100">
-                <div class="col-md-4 px-0 position-relative">
-                    <?php
-                    $image_url = wp_get_attachment_image_src(10, 'full');
-                    ?>
-                    <img src="<?= $image_url[0]; ?>" alt="plage | <?= bloginfo('title'); ?>" class="fill-height-left"/>
+        <div class="row row-apropos h-100">
+          <div class="col-md-4 px-0 position-relative">
+            <?php
+            $image_url = wp_get_attachment_image_src(10, 'full');
+            ?>
+            <img src="<?= $image_url[0]; ?>" alt="a-propos-cheers | <?= bloginfo('title'); ?>" class="fill-height-left"/>
+          </div>
+          <div class="col-md-8" >
+            <div class="card-body p-5">
+              <div>     
+                <h2 id="titre-vert">Bienvenue sur Cheers !</h2>
+                <h3 id="apropors-sous-titre">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
+                <div class="extra-space">
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <h3 id="titre-orange">Notre Mission</h3>
+                  <p>Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
+                      
+                      
+                  <h3 id="titre-orange">Quiz interactif personnalisé</h3>
+                  <p>Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
                 </div>
-                <div class="col-md-8" >
-                    <div class="card-body p-5">
-                            
-                        <h2 class="sub-title mb-4 vert-a-propos">Bienvenue sur Cheers !</h2>
-                        <h3 class="subsub-title mb-5">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
-                        <div class="extra-space">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                              
-                                <h3 class="card-subtitle mb-4 orange-a-propos">Notre Mission</h3>
-                                <p class="apropos-text mb-5">Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
-                             
-                              
-                                <h3 class="card-subtitle mb-4 orange-a-propos">Quiz interactif personnalisé</h3>
-                                <p class="apropos-text mb-5">Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
-                            
-                            </div>
-                          
-                            <div class="col-md-5">
-                              
-                                <h3 class="card-subtitle mb-4 orange-a-propos">Rejoignez Cheers</h3>
-                                <p class="apropos-text mb-5">Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
-                              
-                              
-                                <h3 class="card-subtitle mb-4 orange-a-propos">Ressources Naturelles et Approches Holistiques</h3>
-                                <p class="apropos-text mb-5">Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
-                              
-                            </div>
-                        </div>
-                    </div>
+                  
+                <div class="col-md-5">
+                      
+                  <h3 id="titre-orange">Rejoignez Cheers</h3>
+                  <p>Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
+                      
+                      
+                  <h3 id="titre-orange">Ressources Naturelles et Approches Holistiques</h3>
+                  <p>Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--NOS CONSEILS-->
@@ -76,7 +73,7 @@
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-8 ">
-            <h2 class="mb-4 vert-a-propos">Découvrez nos conseils</h2>
+            <h2 id="titre-vert">Découvrez nos conseils</h2>
             <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
           </div>
         </div>
@@ -97,7 +94,7 @@
                         <img src="<?= $image_url[0]; ?>" alt="anxiete | <?= bloginfo('title'); ?>">
                         <div class="card-body">
                           <h4 class="card-title">Anxiété</h4>
-                          <p class="card-text">Plongez dans notre article pour mieux comprendre et apprendre des stratégies pour apaiser l'anxiété au quotidien.</p>
+                          <p>Plongez dans notre article pour mieux comprendre et apprendre des stratégies pour apaiser l'anxiété au quotidien.</p>
                         </div>
                       </div>
                     </div>
@@ -109,7 +106,7 @@
                         <img src="<?= $image_url[0]; ?>" alt="depression | <?= bloginfo('title'); ?>">
                         <div class="card-body">
                           <h4 class="card-title" id="depression-titre">Dépression</h4>
-                          <p class="card-text">Explorez notre article pour découvrir des perspectives et pour naviguer à travers les moments sombres vers la lumière de l'espoir.</p>
+                          <p>Explorez notre article pour découvrir des perspectives et pour naviguer à travers les moments sombres vers la lumière de l'espoir.</p>
                         </div>
                       </div>
                     </div>
@@ -121,7 +118,7 @@
                         <img src="<?= $image_url[0]; ?>" alt="colere | <?= bloginfo('title'); ?>">
                         <div class="card-body">
                           <h4 class="card-title" id="colere-titre">Colère</h4>
-                          <p class="card-text">Découvrez des astuces naturelles pour apprendre à canaliser la colère et en faire une force positive dans votre vie.</p>
+                          <p>Découvrez des astuces naturelles pour apprendre à canaliser la colère et en faire une force positive dans votre vie.</p>
                         </div>
                       </div>
                     </div>
@@ -137,7 +134,7 @@
                         <img src="<?= $image_url[0]; ?>" alt="fatigue | <?= bloginfo('title'); ?>">
                         <div class="card-body">
                           <h4 class="card-title">Fatigue</h4>
-                          <p class="card-text">Besoin de recharger vos batteries ? Nous vous offrons des conseils pratiques et des stratégies pour retrouver votre énergie et vitalité.</p>
+                          <p>Besoin de recharger vos batteries ? Nous vous offrons des conseils pratiques pour retrouver votre énergie et vitalité.</p>
                         </div>
                       </div>
                     </div>
@@ -197,7 +194,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
                     <div class="subscription-box">
-                        <h2 class="subscription-title">Abonnez-vous pour être au courant de nos prochains articles !</h2>
+                        <h1 id="titre-blanc">Abonnez-vous pour être au courant de nos prochains articles !</h1>
                         <form class="subscription-form">
                             <input type="email" class="form-control rounded-pill" placeholder="Introduisez votre e-mail" required>
                             <button type="submit" class="btn btn-order btn-outline-light rounded-pill">Valider</button>

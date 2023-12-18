@@ -4,19 +4,40 @@ Theme Name: Cheers
 @import url("font/stylesheet.css");
 
 
-#titre {
-  font-family: 'Gilroy';
-  font-weight:900;
-  font-size: 500%;
-  font-style: bold;
-  color: #ffffff;
-}
+
 
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   max-width: 1920px;
+  font-family: 'Gilroy';
+}
+
+h1{
+  font-weight: 900;
+}
+
+h2{
+  font-weight: 600;
+}
+
+h3{
+  font-weight: 600;
+}
+
+
+
+#titre-blanc{
+  color: #ffffff;
+}
+
+#titre-vert{
+  color: #67844C;
+}
+
+#titre-orange{
+  color: #ef7d53;
 }
 
 .navbar {
@@ -39,13 +60,21 @@ body {
 }
 
 .logonoir{
-  width:50%;
-  height: 50%;
+  width: 12%;
+  height: 12%;
+  margin: 6px; /* Ajoute une marge autour du logo */
+  padding: 6px; /* Ajoute un espacement intérieur autour du logo */
+}
+
+.logonoirfooter{
+  width: 50%;
   margin: 6px; /* Ajoute une marge autour du logo */
   padding: 6px; /* Ajoute un espacement intérieur autour du logo */
 }
 
 .boutonnav {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
   color: #ffffff;
   transition: 0.5s;
   background-color: #ffffff00;
@@ -141,17 +170,6 @@ body {
   margin-left: -200px;
 }
 
-.white-color{
-  color:white;
-}
-
-.orange-a-propos{
-  color: #ef7d53;
-}
-
-.vert-a-propos{
-  color:#67844C;
-}*/
 
 
 /* NOS CONSEILS */

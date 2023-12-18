@@ -12,8 +12,8 @@
     <nav class="navbar navbar-expand-lg w-100" style="position:absolute; z-index:1">
         <div class= "container-fluid">
             <a href="<?= home_url('/index'); ?>">
-                <?php $image_url = wp_get_attachment_url(31); ?>
-                <img src="<?=$image_url;?>" class="logo"/>
+                <?php $image_url = wp_get_attachment_url(35); ?>
+                <img src="<?=$image_url;?>" class="logonoir"/>
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
