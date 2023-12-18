@@ -8,7 +8,7 @@
     <img 
         src="<?= $image_url; ?>"
         alt="banner-colere | <?= bloginfo('title'); ?>"
-        style="margin-top: 100px; width: 100%; height: auto;"
+        style="margin-top: 0%; width: 100%; height: auto;"
         id="banner-image"
     />
     <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>

@@ -31,7 +31,13 @@ body {
 }
 
 .logo{
-  width:10%;
+  width: 12%;
+    margin: 6px; /* Ajoute une marge autour du logo */
+    padding: 6px; /* Ajoute un espacement intérieur autour du logo */
+}
+
+.logonoir{
+  width:50%;
     margin: 5px; /* Ajoute une marge autour du logo */
     padding: 5px; /* Ajoute un espacement intérieur autour du logo */
 }
@@ -55,6 +61,10 @@ body {
   background-color: rgba(255, 255, 255, 0.250); /* Fond blanc avec opacité réduite */
 }
 
+
+
+/* ACCUEIL */
+
 .banner,
 .order-form {
 	background-size: cover;
@@ -74,17 +84,20 @@ body {
   z-index: -1;
 }
 
+
+/* A PROPOS */
+
 .fill-height-screen {
-  height: 100vh; /* Remplit l'écran en hauteur */
+  height: 100vh;
 }
 
 .fill-height-left {
-  height: 100%; /* Remplit la hauteur de la colonne */
-  width: 100%; /* Recouvre toute la largeur */
+  height: 100%; 
+  width: 100%; 
   position: absolute;
-  left: 0; /* Aligne l'image sur le bord gauche */
-  top: 0; /* Aligne l'image en haut de la colonne */
-  object-fit: cover; /* Assure que l'image remplit l'espace sans déformer */
+  left: 0;
+  top: 0;
+  object-fit: cover;
 }
 
 
@@ -107,12 +120,71 @@ body {
 }
 
 .orange-a-propos{
-  color: #FF8C66;
+  color: #ef7d53;
 }
 
 .vert-a-propos{
   color:#67844C;
+}*/
+
+
+/* NOS CONSEILS */
+
+.container-card {
+  position: relative;
 }
+
+.card-title{
+  position: absolute;
+  bottom: 87%;
+  right: 77%;
+  color: #ffffff;
+  background-color: #ef7d53;
+  padding: 10px;
+  font-size: 20px;
+  
+}
+
+#depression-titre{
+  left: 2%;
+  right: 68%;
+}
+
+#colere-titre{
+  left: 2%;
+  right: 79%;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+
+/* NEWSLETTER */
+
+.subscription-section{
+  background-color: #67844C;
+  padding: 50px; /* Augmente le padding pour plus d'espace autour du contenu */
+  min-height: 530px; /* Optionnel: Définit une hauteur minimale pour la section */
+}
+
+.subscription-title{
+  color: #ffffff;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.form-control{
+  margin-right: 10%;
+
+}
+
+.subscription-form{
+  display: flex;
+
+}
+
+/* FOOTER */
 
 footer {
   background-color: #EBE3D5;
@@ -120,30 +192,32 @@ footer {
   text-align: center;
   padding: 20px;
 }
- 
+
 .footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* Ajout pour gérer le passage à la ligne sur les petits écrans */
+  flex-wrap: wrap;
 }
-
 
 .footer-section {
-  flex-basis: 200px; /* Largeur initiale de chaque section */
-  margin: 0 10px; /* Ajout de marges pour séparer les sections */
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
 }
- 
-.footer-section h4 {
-  color: #000000;
-  margin-bottom: 10px; /* Ajout d'une marge en bas pour séparer le titre du texte */
+
+.logo-rs {
+  max-width: 30px; /* Ajustez cette valeur selon la taille souhaitée */
+  max-height: 30px; /* Ajustez cette valeur pour contrôler la hauteur maximale */
+  height: auto;
+  width: auto;
 }
- 
-.footer-section p {
-  color: #000000;
-  text-align: center; /* Centrer le texte par rapport à la H4 */
-}
- 
+
+
+
+
+
+
 
 
 
@@ -235,7 +309,7 @@ h1 {
 }
 
 #result {
-  background-color: #FF8C66;
+  background-color: #ef7d53;
   padding: 25px;
   height: 60%;
   width: 80%;
