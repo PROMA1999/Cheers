@@ -10,117 +10,117 @@
                 <p> Je me sens déprimé et j'éprouve des difficultés à faire face à la vie quotidienne.</p>
                 <div class="instruction">Cochez la case appropriée</div>
             </div>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question1[]" value="a">
-            Tout à fait d'accord
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question1[]" value="b">
-            Un peu, par moment
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question1[]" value="c">
-            Pas du tout
-          </label>
-          <button type="button" class="btn btn-primary next-question"disabled id="bouton">Question Suivante</button>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question1[]" value="a">
+              Tout à fait d'accord
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question1[]" value="b">
+              Un peu, par moment
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question1[]" value="c">
+              Pas du tout
+            </label>
+            <button type="button" class="btn btn-primary next-question"disabled id="bouton">Question Suivante</button>
+          </div>
         </div>
-      </div>
 
-      <div class="question-container" id="question2">
-        <div class="mb-3">
-            <div class="infos-questions">
-                <div class="question-number">Question 2/5</div>
-                <p>Je me sens accablé(e) par le stress, j'ai du mal à faire face aux difficultés.</p>
-                <div class="instruction">Cochez la case appropriée</div>
-            </div>
-          <label class="form-check">
-          <input class="form-check-input" type="radio" name="question2[]" value="a">
-          Tout à fait d'accord
-          </label>
-          <label class="form-check">
-          <input class="form-check-input" type="radio" name="question2[]" value="b">
-          Un peu, par moment
-          </label>
-          <label class="form-check">
-          <input class="form-check-input" type="radio" name="question2[]" value="c">
-          Pas du tout
-          </label>
-          <button type="button" class="btn btn-primary next-question" id="bouton">Question Suivante</button>
-        </div>
-      </div>
-
-      <div class="question-container" id="question3">
-        <div class="mb-3">
-            <div class="infos-questions">
-                <div class="question-number">Question 3/5</div>
-                <p>J'ai des problèmes de sommeil persistants, je dors très peu ou trop et ne me sens pas reposé au réveil.</p>
-                <div class="instruction">Cochez la case appropriée</div>
-            </div>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question3[]" value="a">
+        <div class="question-container" id="question2">
+          <div class="mb-3">
+              <div class="infos-questions">
+                  <div class="question-number">Question 2/5</div>
+                  <p>Je me sens accablé(e) par le stress, j'ai du mal à faire face aux difficultés.</p>
+                  <div class="instruction">Cochez la case appropriée</div>
+              </div>
+            <label class="form-check">
+            <input class="form-check-input" type="radio" name="question2[]" value="a">
             Tout à fait d'accord
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question3[]" value="b">
+            </label>
+            <label class="form-check">
+            <input class="form-check-input" type="radio" name="question2[]" value="b">
             Un peu, par moment
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question3[]" value="c">
+            </label>
+            <label class="form-check">
+            <input class="form-check-input" type="radio" name="question2[]" value="c">
             Pas du tout
-          </label>
-          <button type="button" class="btn btn-primary next-question" id="bouton">Question Suivante</button>
+            </label>
+            <button type="button" class="btn btn-primary next-question" id="bouton">Question Suivante</button>
+          </div>
         </div>
-      </div>
 
-      <div class="question-container" id="question4">
-        <div class="mb-3">
-            <div class="infos-questions">
-                <div class="question-number">Question 4/5</div>
-                <p>J'ai une très faible estime de moi-même et je me dévalorise fréquemment.</p>
-                <div class="instruction">Cochez la case appropriée</div>
-            </div>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question4[]" value="a">
-            Tout à fait d'accord
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question4[]" value="b">
-            Un peu, par moment
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question4[]" value="c">
-            Pas du tout
-          </label>
-          <button type="button" class="btn btn-primary next-question" id="bouton">Question Suivante</button>
+        <div class="question-container" id="question3">
+          <div class="mb-3">
+              <div class="infos-questions">
+                  <div class="question-number">Question 3/5</div>
+                  <p>J'ai des problèmes de sommeil persistants, je dors très peu ou trop et ne me sens pas reposé au réveil.</p>
+                  <div class="instruction">Cochez la case appropriée</div>
+              </div>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question3[]" value="a">
+              Tout à fait d'accord
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question3[]" value="b">
+              Un peu, par moment
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question3[]" value="c">
+              Pas du tout
+            </label>
+            <button type="button" class="btn btn-primary next-question" id="bouton">Question Suivante</button>
+          </div>
         </div>
-      </div>
+
+        <div class="question-container" id="question4">
+          <div class="mb-3">
+              <div class="infos-questions">
+                  <div class="question-number">Question 4/5</div>
+                  <p>J'ai une très faible estime de moi-même et je me dévalorise fréquemment.</p>
+                  <div class="instruction">Cochez la case appropriée</div>
+              </div>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question4[]" value="a">
+              Tout à fait d'accord
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question4[]" value="b">
+              Un peu, par moment
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question4[]" value="c">
+              Pas du tout
+            </label>
+            <button type="button" class="btn btn-primary next-question" id="bouton">Question Suivante</button>
+          </div>
+        </div>
 
       
 
-      <div class="question-container" id="question5">
-        <div class="mb-3">
-            <div class="infos-questions">
-                <div class="question-number">Question 5/5</div>
-                <p>J'ai des difficultés relationnelles majeures et je me sens complètement isolé(e).</p>
-                <div class="instruction">Cochez la case appropriée</div>
-            </div>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question5[]" value="a">
-            Tout à fait d'accord
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question5[]" value="b">
-            Un peu, par moment
-          </label>
-          <label class="form-check">
-            <input class="form-check-input" type="radio" name="question5[]" value="c">
-            Pas du tout
-          </label>
-          <button type="button" class="btn btn-primary next-question" id="bouton">Voir les résultats</button>
+        <div class="question-container" id="question5">
+          <div class="mb-3">
+              <div class="infos-questions">
+                  <div class="question-number">Question 5/5</div>
+                  <p>J'ai des difficultés relationnelles majeures et je me sens complètement isolé(e).</p>
+                  <div class="instruction">Cochez la case appropriée</div>
+              </div>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question5[]" value="a">
+              Tout à fait d'accord
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question5[]" value="b">
+              Un peu, par moment
+            </label>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="question5[]" value="c">
+              Pas du tout
+            </label>
+            <button type="button" class="btn btn-primary next-question" id="bouton">Voir les résultats</button>
+          </div>
         </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
 
 <!-- Liens vers Bootstrap JS et Popper.js pour les fonctionnalités Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
