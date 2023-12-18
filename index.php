@@ -16,7 +16,7 @@
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
                 <div class="col-12" >
                     <h1 id="titre-blanc">RESSENTEZ, ÉVALUEZ,<br> SANTÉ !</h1>
-                    <h3 id="titre-blanc">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
+                    <h3 id="titre-blanc" class="mb-5">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
                     <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill">Commencer le test</a>
                   </div>
             </div>
@@ -39,10 +39,9 @@
             <div class="card-body p-5">
               <div>     
                 <h2 id="titre-vert">Bienvenue sur Cheers !</h2>
-                <h3 id="apropors-sous-titre">Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
-                <div class="extra-space">
+                <h3>Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
               </div>
-              <div class="row">
+              <div class="row row-paragraphes">
                 <div class="col-md-5">
                   <h3 id="titre-orange">Notre Mission</h3>
                   <p>Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
@@ -194,7 +193,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
                     <div class="subscription-box">
-                        <h1 id="titre-blanc">Abonnez-vous pour être au courant de nos prochains articles !</h1>
+                        <h1 id="titre-blanc" class="mb-5">Abonnez-vous pour être au courant de nos prochains articles !</h1>
                         <form class="subscription-form">
                             <input type="email" class="form-control rounded-pill" placeholder="Introduisez votre e-mail" required>
                             <button type="submit" class="btn btn-order btn-outline-light rounded-pill">Valider</button>

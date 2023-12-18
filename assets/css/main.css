@@ -26,6 +26,10 @@ h3{
   font-weight: 600;
 }
 
+h4{
+  font-weight: 600;
+}
+
 
 
 #titre-blanc{
@@ -34,10 +38,12 @@ h3{
 
 #titre-vert{
   color: #67844C;
+  margin-bottom: 30px;
 }
 
 #titre-orange{
   color: #ef7d53;
+  margin-bottom: 20px;
 }
 
 .navbar {
@@ -153,6 +159,15 @@ h3{
 
 .row-apropos{
   --bs-gutter-x: 0;
+}
+
+.row-paragraphes{
+  display: flex;
+  margin-top: 10rem;
+}
+
+.row-paragraphes p{
+  font-size: 20px;
 }
 
 .text-sand-background {
