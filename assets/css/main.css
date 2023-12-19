@@ -27,6 +27,7 @@ h2{
 
 h3{
   font-weight: 600;
+  font-size: 25px;
 }
 
 h4{
@@ -211,7 +212,7 @@ p{
 .subscription-section {
   background-color: #67844C;
   padding: 50px;
-  min-height: 530px;
+  min-height: 540px;
   display: flex;
   align-items: center;
   justify-content: center;
