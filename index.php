@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <section class="banner d-flex justify-content-center align-items-center " style="position: relative; height: 100vh; overflow: hidden;">
+    <section class="banner d-flex justify-content-center align-items-center ">
 
         <!-- Contenu de la section accueil -->
         <div class="container-fluid p-0">
@@ -51,7 +51,7 @@
                   <p>Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
                 </div>
                   
-                <div class="col-md-5">
+                <div class="col-md-5" id="colonne2-apropos">
                       
                   <h3 id="titre-orange">Rejoignez Cheers</h3>
                   <p>Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>

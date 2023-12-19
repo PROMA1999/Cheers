@@ -116,23 +116,11 @@ h4{
 
 /* ACCUEIL */
 
-.banner,
-.order-form {
-	background-size: cover;
-	height: 600px;
-  width: auto;
-  overflow: hidden;
-}
 
-
-#banner-image {
-  max-width: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1)),url(/);
-  height: auto;
-  object-fit: cover;
+.banner {
   position: relative;
-  z-index: -1;
+  height: 100vh;
+  overflow: hidden;
 }
 
 
@@ -168,6 +156,11 @@ h4{
 
 .row-paragraphes p{
   font-size: 20px;
+  padding-right: 60px;
+}
+
+#colonne2-apropos{
+  margin-left: 50px;
 }
 
 .text-sand-background {
@@ -406,3 +399,36 @@ legend {
   margin-bottom: 10px;
 }
 */
+
+
+/*Style-profil*/
+
+.left-panel img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px; /* Marge augmentée entre la photo et le texte */
+}
+
+.right-panel {
+  border-radius: 30px; /* Augmentation du rayon de bordure */
+  padding: 75px; /* Marge intérieure augmentée */
+  background-color: #ebe3d5;
+  height: 70vh; /* Hauteur ajustée */
+}
+
+.right-panel h2 {
+  font-size: 26px; /* Taille de titre augmentée */
+  margin-bottom: 20px; /* Espacement augmenté pour les titres */
+}
+
+.right-panel p {
+  font-size: 20px; /* Taille de texte des paragraphes augmentée */
+  margin-bottom: 20px; /* Espacement augmenté pour les paragraphes */
+}
+
+.title-above-right-panel {
+  font-size: 30px; /* Taille de titre supérieur augmentée */
+  text-align: left;
+  margin-bottom: 20px;
+}
