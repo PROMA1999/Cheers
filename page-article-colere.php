@@ -11,12 +11,13 @@
             style= "width: 100%;"
         />
         <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-        <!-- Contenu centré au milieu de l'image -->
-        <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
-            <div class="col-12" >
-                <h1 id="titre">Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie </h1>
-                <h3 class="py-5 white-color">Découvrez trois approches simples mais puissantes pour apprivoisez votre colère. Libérez-vous de votre colère et vivez une vie plus sereine dès maintenant !</h3>
-                <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill ">Commencer le test</a>
+
+        <div class="titre-article">
+            <div class="row position-absolute top-50 start-50 translate-middle w-100">
+                <div class="col-lg-9">
+                    <h1>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</h1>
+                    <h3 style="padding-top: 2rem; padding-bottom: 2rem;">Découvrez trois approches simples mais puissantes pour apprivoisez votre colère. Libérez-vous de votre colère et vivez une vie plus sereine dès maintenant !</h3>
+                </div>
             </div>
         </div>
     </div>

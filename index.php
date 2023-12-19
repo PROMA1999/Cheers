@@ -13,11 +13,11 @@
             <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
             <!-- Contenu centré au milieu de l'image -->
             <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
-                <div class="col-12" >
-                    <h1 id="titre-blanc">RESSENTEZ, ÉVALUEZ,<br> SANTÉ !</h1>
-                    <h3 id="titre-blanc" class="mb-5">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
-                    <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill">Commencer le test</a>
-                  </div>
+              <div class="col-12" >
+                <h1 id="titre-blanc">RESSENTEZ, ÉVALUEZ,<br> SANTÉ !</h1>
+                <h3 id="titre-blanc" class="mb-5">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
+                <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill">Commencer le test</a>
+              </div>
             </div>
         </div>
     </section>
@@ -26,8 +26,8 @@
 
     <!--A PROPOS-->
     <section class="fill-height-screen-apropos">
-      <div class="px-0 h-100 position-relative">
-        <div class="row row-apropos h-100">
+      <div class="px-0 position-relative">
+        <div class="row row-apropos">
           <div class="col-md-4 px-0 position-relative">
             <?php
             $image_url = wp_get_attachment_image_src(10, 'full');

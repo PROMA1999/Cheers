@@ -22,7 +22,7 @@ h2{
   font-weight: 600;
   font-size: 40px;
   color: #67844C;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h3{
@@ -135,15 +135,9 @@ p{
 
 /* A PROPOS */
 
-.fill-height-screen {
-  height: 100vh;
-}
-
 .fill-height-screen-apropos {
-  height: 100vh;
   background-color: #EBE3D5;
 }
-
 
 .fill-height-left {
   height: 100%; 
@@ -160,7 +154,7 @@ p{
 
 .row-paragraphes{
   display: flex;
-  margin-top: 10rem;
+  margin-top: 30px;
 }
 
 .row-paragraphes p{
@@ -178,11 +172,6 @@ p{
 }
 
 
-#titre3 {
-  color: #ffffff;
-	transition: 0.5s;
-}
-
 .custom-margin-left {
   margin-left: -200px;
 }
@@ -193,7 +182,6 @@ p{
 
 .container-card {
   position: relative;
-
 }
 
 .card-title{
@@ -215,10 +203,6 @@ p{
 #colere-titre{
   left: 2%;
   right: 79%;
-}
-
-.card-text {
-  padding: 20px;
 }
 
 
@@ -449,8 +433,14 @@ legend {
 
 /*Style-articles*/
 
+.titre-article {
+  top: 55%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .texte-article {
-  margin-left: %;
+  margin-left: 5%;
   margin-right: 5%;
 }
 
