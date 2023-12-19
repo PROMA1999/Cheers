@@ -119,9 +119,17 @@ h4{
 
 .banner {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh; /* Hauteur de la fenêtre de visualisation */
+  width: 100%; /* Largeur complète */
+  overflow: hidden; /* Cache les débordements */
 }
+
+#banner-image {
+  width: 100%; /* Largeur complète de la section */
+  height: 100%; /* Hauteur complète de la section */
+  object-fit: cover; /* Garantit que l'image couvre tout */
+}
+
 
 
 /* A PROPOS */

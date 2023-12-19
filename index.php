@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <section class="banner d-flex justify-content-center align-items-center ">
+    <section class="banner d-flex justify-content-center align-items-center">
 
         <!-- Contenu de la section accueil -->
         <div class="container-fluid p-0">
