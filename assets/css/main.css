@@ -20,6 +20,8 @@ h1{
 
 h2{
   font-weight: 600;
+  color: #67844C;
+  margin-bottom: 30px;
 }
 
 h3{
@@ -36,10 +38,6 @@ h4{
   color: #ffffff;
 }
 
-#titre-vert{
-  color: #67844C;
-  margin-bottom: 30px;
-}
 
 #titre-orange{
   color: #ef7d53;

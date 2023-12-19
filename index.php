@@ -8,8 +8,7 @@
             <img 
                 src="<?= $image_url; ?>"
                 alt="plage | <?= bloginfo('title'); ?>"
-                style="margin-top: 100px; width: 100%; height: auto;"
-                id="banner-image"
+                style="margin-top: 100px; width: 100%;"
             />
             <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
             <!-- Contenu centré au milieu de l'image -->
@@ -38,7 +37,7 @@
           <div class="col-md-8" >
             <div class="card-body p-5">
               <div>     
-                <h2 id="titre-vert">Bienvenue sur Cheers !</h2>
+                <h2>Bienvenue sur Cheers !</h2>
                 <h3>Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
               </div>
               <div class="row row-paragraphes">
@@ -72,7 +71,7 @@
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-8 ">
-            <h2 id="titre-vert">Découvrez nos conseils</h2>
+            <h2>Découvrez nos conseils</h2>
             <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
           </div>
         </div>
