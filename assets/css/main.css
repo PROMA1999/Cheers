@@ -369,6 +369,7 @@ h1 {
   border-radius: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   height: 540px; /* Hauteur de la fenêtre de visualisation */
   width: 800px; /* Largeur complète */
