@@ -167,7 +167,7 @@
   document.body.innerHTML = `
   <?php include 'header2.php'; ?>
     <div class="container py-5">
-      <div id="result" class="mt-4">
+      <div id="result" class="result-custom">
         <p>${resultText}</p>
       </div>
     </div>`;
