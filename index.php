@@ -67,7 +67,7 @@
     </section>
 
     <!--NOS CONSEILS-->
-    <section class="py-4">
+    <section  id="nos-conseils" class="py-4">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-8 ">
@@ -104,7 +104,7 @@
                         <img src="<?= $image_url[0]; ?>" alt="depression | <?= bloginfo('title'); ?>">
                         <div class="card-body">
                           <h4 class="card-title" id="depression-titre">Dépression</h4>
-                          <p>Explorez notre article pour découvrir des perspectives et pour naviguer à travers les moments sombres vers la lumière de l'espoir.</p>
+                          <p>Explorez notre article pour naviguer à travers les moments sombres vers la lumière de l'espoir.</p>
                         </div>
                       </div>
                     </div>

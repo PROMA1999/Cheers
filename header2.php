@@ -21,7 +21,7 @@
                         <a class="btn btn-order2 btn-outline-dark rounded-pill" href="<?= home_url('/quiz'); ?>">Quiz</a>
                     </li>
                     <li class="nav-item pe-4">
-                        <a class="btn btn-order2 btn-outline-dark rounded-pill" href="#">Nos conseils</a>
+                        <a href="https://cheers.emu.isfsc.be/index#nos-conseils" class="btn btn-order2 btn-outline-dark rounded-pill">Nos conseils</a>
                     </li>
                     <li class="nav-item pe-4">
                         <a class="btn btn-order2 btn-outline-dark rounded-pill" href="#">Profil</a>

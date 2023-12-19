@@ -21,7 +21,7 @@
                         <a class="btn btn-order btn-outline-light rounded-pill" href="<?= home_url('/quiz'); ?>">Quiz</a>
                     </li>
                     <li class="nav-item pe-4">
-                        <a class="btn btn-order btn-outline-light rounded-pill" href="#">Nos conseils</a>
+                        <a href="#nos-conseils" class="btn btn-order btn-outline-light rounded-pill">Nos conseils</a>
                     </li>
                     <li class="nav-item pe-4">
                         <a class="btn btn-order btn-outline-light rounded-pill" href="#">Profil</a>

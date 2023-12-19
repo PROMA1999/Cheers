@@ -8,9 +8,9 @@
         <img 
             src="<?= $image_url; ?>"
             alt="banner-colere | <?= bloginfo('title'); ?>"
-            style= "width: 100%;"
+            id="banner-article"
         />
-        <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+        <div class="mask"></div>
 
         <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
             <div class="col-lg-9">
