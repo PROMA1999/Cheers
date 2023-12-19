@@ -1,30 +1,40 @@
 <?php include 'header2.php'; ?>
+<?php
+$quizList = new WP_Query([
+    'post_type' => 'quiz',
+    'posts_per_page' => -1
+]);
+?>
 
 <section class="body-quiz">
-  <div class="quiz-container">
+  <div id="quizcontainer" class="quiz-container">
     <form class="py-5"id="quizForm">
+      <?php $count = 0; $total_count = $quizList->found_posts ?>
+    <?php while ( $quizList->have_posts() ) : $quizList->the_post(); $count++; ?>
       <div class="question-container active-question" id="question1">
         <div class="mb-3">
             <div class="infos-questions">
-                <div class="question-number">Question 1/5</div>
-                <p> Je me sens déprimé et j'éprouve des difficultés à faire face à la vie quotidienne.</p>
+                <div class="question-number">Question <?= $count; ?>/<?= $total_count; ?></div>
+                <p><?php the_title(); ?></p>
                 <div class="instruction">Cochez la case appropriée</div>
             </div>
+            <?php $answers = explode(' / ', get_the_content()); ?>
             <label class="form-check">
-              <input class="form-check-input" type="radio" name="question1[]" value="a">
-              Tout à fait d'accord
+              <input class="form-check-input" type="radio" name="question<?= $count; ?>[]" value="a">
+              <?php  echo $answers[0]; ?>
             </label>
             <label class="form-check">
               <input class="form-check-input" type="radio" name="question1[]" value="b">
-              Un peu, par moment
+              <?php echo $answers[1]; ?>
             </label>
             <label class="form-check">
               <input class="form-check-input" type="radio" name="question1[]" value="c">
-              Pas du tout
+              <?php echo $answers[2]; ?>
             </label>
             <button type="button" class="btn btn-primary next-question"disabled id="bouton">Question Suivante</button>
           </div>
         </div>
+    <?php endwhile; ?>
 
         <div class="question-container" id="question2">
           <div class="mb-3">
@@ -125,7 +135,32 @@
 <!-- Liens vers Bootstrap JS et Popper.js pour les fonctionnalités Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  
+  document.addEventListener('DOMContentLoaded', function() {
+    const allQuestions = document.querySelectorAll('.question-container');
+
+    allQuestions.forEach((question, index) => {
+        const inputs = question.querySelectorAll('input[type="radio"]');
+        const nextButton = question.querySelector('.next-question');
+
+        inputs.forEach(input => {
+            input.addEventListener('click', () => {
+                nextButton.disabled = false;
+            });
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (index < allQuestions.length - 1) {
+                allQuestions[index + 1].classList.add('active-question');
+                question.classList.remove('active-question');
+            } else {
+                // Logique pour calculer et afficher le résultat
+            }
+        });
+    });
+});
+
+
+
   const questions = document.querySelectorAll('.question-container');
   const nextButtons = document.querySelectorAll('.next-question');
   let currentQuestion = 0;
@@ -165,13 +200,9 @@
   }
 
   // Affichage du résultat
-  document.body.innerHTML = `
-  <?php include 'header2.php'; ?>
-    <div class="container py-5">
-      <div id="result" class="result-custom">
-        <p>${resultText}</p>
-      </div>
-    </div>`;
+  const quizContainer = document.getElementById('quizcontainer')
+  quizContainer.classList.add("result");
+  quizContainer.innerHTML = `<p>${resultText}</p>`;
 
 
 
@@ -201,6 +232,16 @@
 question1Inputs.forEach(input => {
   input.addEventListener('click', () => {
     const nextButton = document.querySelector('#question1 .next-question');
+    nextButton.disabled = false;
+  });
+
+
+});
+  const question2Inputs = document.querySelectorAll('input[name="question2[]"]');
+
+question2Inputs.forEach(input => {
+  input.addEventListener('click', () => {
+    const nextButton = document.querySelector('#question2 .next-question');
     nextButton.disabled = false;
   });
 });
