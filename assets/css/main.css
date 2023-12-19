@@ -20,6 +20,7 @@ h1{
 
 h2{
   font-weight: 600;
+  font-size: 40px;
   color: #67844C;
   margin-bottom: 30px;
 }
@@ -32,7 +33,9 @@ h4{
   font-weight: 600;
 }
 
-
+p{
+  font-size: 20px;
+}
 
 #titre-blanc{
   color: #ffffff;
@@ -437,4 +440,25 @@ legend {
   font-size: 30px; /* Taille de titre supérieur augmentée */
   text-align: left;
   margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*Style-articles*/
+
+.texte-article {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.banner-article {
+  margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.img-article{
+  max-width: 50%;
+  
 }
