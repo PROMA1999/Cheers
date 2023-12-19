@@ -12,13 +12,16 @@
         />
         <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
 
-        <div class="titre-article">
-            <div class="row position-absolute top-50 start-50 translate-middle w-100">
-                <div class="col-lg-9">
-                    <h1>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</h1>
-                    <h3 style="padding-top: 2rem; padding-bottom: 2rem;">Découvrez trois approches simples mais puissantes pour apprivoisez votre colère. Libérez-vous de votre colère et vivez une vie plus sereine dès maintenant !</h3>
-                </div>
+        <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
+            <div class="col-lg-9">
+                <h1>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</h1>
+                <h3>Découvrez <span class="text-vert">trois approches</span> simples mais puissantes pour apprivoisez votre colère. <br>Libérez-vous de votre colère et vivez une vie plus sereine dès maintenant !</h3>
+                <?php
+                $image_url = wp_get_attachment_image_src(40, 'full');
+                ?>
+                <img src="<?= $image_url[0]; ?>" alt="flèche bas | <?= bloginfo('title'); ?>" class="fleche-bas">
             </div>
+            
         </div>
     </div>
 </section>

@@ -435,9 +435,8 @@ legend {
 /*Style-articles*/
 
 .titre-article {
-  top: 55%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 8%;
+  margin-left: 4%; /* Décale la colonne vers la droite */ 
 }
 
 .texte-article {
@@ -456,3 +455,14 @@ legend {
   margin-right: auto;
 }
 
+.text-vert {
+  color:#67844C; /* Ou toute autre nuance de vert que vous préférez */
+}
+
+.fleche-bas {
+  margin-top: 3%;
+  max-width: 3%; /* Ajustez cette valeur selon vos besoins */
+  height: auto; /* Garde les proportions de l'image */
+  display: block; /* Affiche l'image comme un bloc */
+ 
+}
