@@ -441,7 +441,7 @@ legend {
 
 .texte-article {
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 
 .banner-article {
@@ -465,4 +465,13 @@ legend {
   height: auto; /* Garde les proportions de l'image */
   display: block; /* Affiche l'image comme un bloc */
  
+}
+
+.disclaimer{
+  border-left: 10px #67844C;
+  padding-left: 20px;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  margin-left: 40%;
+  margin-right: 20%;
 }
