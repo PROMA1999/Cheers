@@ -1,82 +1,70 @@
-<?php get_header(); ?>
+<?php /* Template Name: PageConseils */ include 'header2.php'; ?>
 
-    <section class="banner d-flex justify-content-center align-items-center">
-
-        <!-- Contenu de la section accueil -->
-        <div class="container-fluid p-0">
-            <?php $image_url = wp_get_attachment_url(60); ?>
-            <img 
-                src="<?= $image_url; ?>"
-                alt="plage | <?= bloginfo('title'); ?>"
-                style="margin-top: 100px; width: 100%;"
-            />
-            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
-            <!-- Contenu centré au milieu de l'image -->
-            <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
-              <div class="col-12" >
-                <h1 id="titre-blanc">RESSENTEZ, ÉVALUEZ,<br> SANTÉ !</h1>
-                <h3 id="titre-blanc" class="mb-5">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
-                <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill">Commencer le test</a>
-              </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--A PROPOS-->
-    <section class="fill-height-screen-apropos">
-      <div class="px-0 position-relative">
-        <div class="row row-apropos">
-          <div class="col-md-4 px-0 position-relative">
-            <?php
-            $image_url = wp_get_attachment_image_src(10, 'full');
-            ?>
-            <img src="<?= $image_url[0]; ?>" alt="a-propos-cheers | <?= bloginfo('title'); ?>" class="fill-height-left"/>
-          </div>
-          <div class="col-md-8" >
-            <div class="card-body p-5">
-              <div>     
-                <h2>Bienvenue sur Cheers !</h2>
-                <h3>Votre compagnon dédié à la santé mentale et au bien-être émotionnel.</h3>
-              </div>
-              <div class="row row-paragraphes">
-                <div class="col-md-5">
-                  <h3 id="titre-orange">Notre Mission</h3>
-                  <p>Fournir des conseils, des informations et des solutions personnalisées pour naviguer à travers les défis émotionnels de la vie.</p>
-                      
-                      
-                  <h3 id="titre-orange">Quiz interactif personnalisé</h3>
-                  <p>Comprenez vos besoins individuels avec notre quiz interactif. Recevez des recommandations spécifiques pour gérer le stress, améliorer le sommeil et bien plus encore.</p>
-                </div>
-                  
-                <div class="col-md-5" id="colonne2-apropos">
-                      
-                  <h3 id="titre-orange">Rejoignez Cheers</h3>
-                  <p>Embarquez avec nous dans ce voyage vers une vie émotionnelle épanouissante. Prendre soin de soi devrait être aussi naturel que de dire "Cheers" à la vie.</p>
-                      
-                      
-                  <h3 id="titre-orange">Ressources Naturelles et Approches Holistiques</h3>
-                  <p>Cheers vous guide avec des ressources naturelles et des approches holistiques pour votre bien-être émotionnel a travers nos différents rubriques.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="banner banner-article d-flex justify-content-center align-items-center ">
+  <!-- Contenu de la section accueil -->
+  <div class="container-fluid p-0">
+    <?php $image_url = wp_get_attachment_url(57); ?>
+    <img 
+      src="<?= $image_url; ?>"
+      alt="banner-depression | <?= bloginfo('title'); ?>"
+      style= "width: 100%;"
+    />
+    <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
+      <div class="col-lg-9">
+        <h1>Se Libérer De La Dépression : 2 Méthodes Naturelles à Essayer</h1>
+        <h3>Découvrez <span class="text-vert">deux approches</span> simples mais puissantes pour traiter la dépression. <br><span class="text-vert">sans médicaments.</h3>
+        <?php
+        $image_url = wp_get_attachment_image_src(40, 'full');
+        ?>
+        <img src="<?= $image_url[0]; ?>" alt="flèche bas | <?= bloginfo('title'); ?>" class="fleche-bas">
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="texte-article">
+    <h2>Pouvoirs des Herbes Adaptogènes contre la Dépression</h2>
+    <p><strong>Herbes Adaptogènes pour la Sérénité : </strong> Explorez des herbes adaptogènes telles que l'ashwagandha, la passiflore et le millepertuis. Ces plantes sont reconnues pour leur capacité à équilibrer les neurotransmetteurs et à favoriser une réponse émotionnelle positive, contribuant ainsi à apaiser les sentiments dépressifs.</p>
+    <p><strong>Énergie Positive avec l'Exposition au Soleil :</strong>  Profitez de l'exposition régulière au soleil pour stimuler la production de vitamine D,  une carence en vitamine D est liée à la dépression, et passer du temps à l'extérieur peut améliorer l'humeur en augmentant les niveaux de sérotonine.</p>
+    <p class="mb-5"><strong>Décorez votre espace avec des objets liés à des souvenirs heureux </strong> : entourant votre quotidien de rappels visuels de la positivité.</p>
+    <br>
+    <div class="img-article mb-5">
+        <?php
+        $image_url = wp_get_attachment_image_src(69, 'full');
+        ?>
+        <img src="<?= $image_url[0]; ?>" alt="depression1 | <?= bloginfo('title'); ?>">
+    </div>
+</section>
+<section class="texte-article">
+    <h2>Réduisez le Stress avec la Méditation et l'Exercice</h2>
+    <p><strong>Méditation Facile : </strong>Prenez quelques minutes chaque jour pour méditer. </p>
+    <p class="mb-5"><strong>Marchez vers la Bonne Humeur :</strong> Une simple promenade quotidienne libère des endorphines, les hormones du bonheur.</p>
+    <div class="img-article mb-5"> 
+        <?php
+        $image_url = wp_get_attachment_image_src(70, 'full');
+        ?>
+        <img src="<?= $image_url[0]; ?>" alt="depression2 | <?= bloginfo('title'); ?>">
+    </div>
+</section>
+
+<div class="disclaimer">
+    <p>Libérez vous naturellement de la dépression en adoptant de petits changements dans votre vie quotidienne. N'oubliez pas, consultez toujours un professionnel de la santé pour des conseils adaptés.</p>
+</div>
+
+
 
     <!--NOS CONSEILS-->
-    <section  id="nos-conseils" class="py-4">
+    <section class="py-4">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-md-8 ">
-            <h2>Découvrez nos conseils</h2>
-            <h3>Parcourez ici nos différents conseils sur la santé mentale et trouvez des remèdes naturels.</h3>
+            <h3>Autres articles qui peuvent vous intéresser</h3>
           </div>
         </div>
       </div>
-      
+
       <div class="container pt-5 pb-5">
         <div class="row">      
           <div class="col-12">
@@ -191,27 +179,5 @@
       });
     </script>
 
-
-
-    <!--NEWSLETTER-->
-
-    <section class="subscription-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <div class="subscription-box">
-                        <h2 id="titre-blanc" class="mb-5">Abonnez-vous pour être au courant de nos prochains articles !</h2>
-                        <form class="subscription-form">
-                            <input type="email" class="form-control rounded-pill" placeholder="Introduisez votre e-mail" required>
-                            <button type="submit" class="btn btn-order btn-outline-light rounded-pill">Valider</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-  </body>
 
 <?php get_footer(); ?>

@@ -1,66 +1,59 @@
-<?php include 'header2.php'; ?>
+<?php /* Template Name: PageConseils */ include 'header2.php'; ?>
 
 <section class="banner banner-article d-flex justify-content-center align-items-center ">
   <!-- Contenu de la section accueil -->
   <div class="container-fluid p-0">
-    <?php $image_url = wp_get_attachment_url(56); ?>
+    <?php $image_url = wp_get_attachment_url(55); ?>
     <img 
       src="<?= $image_url; ?>"
-      alt="banner-colere | <?= bloginfo('title'); ?>"
+      alt="banner-anxiete | <?= bloginfo('title'); ?>"
       style= "width: 100%;"
     />
     <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
       <div class="col-lg-9">
-        <h1>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</h1>
-        <h3>Découvrez <span class="text-vert">trois approches</span> simples mais puissantes pour apprivoisez votre colère. <br>Libérez-vous de votre colère et vivez une vie plus sereine dès maintenant !</h3>
+        <h1>Apaisez l’Anxiété en Nourrissant Votre Esprit </h1>
+        <h3>Découvrez <span class="text-vert">deux approches</span> simples mais puissantes pour appaiser votre èsprit. <br><span class="text-vert">sans médicaments.</h3>
+        <h3> Libérez-vous de l’anxiété et vivez une vie plus sereine dès maintenant !</h3>
         <?php
         $image_url = wp_get_attachment_image_src(40, 'full');
         ?>
         <img src="<?= $image_url[0]; ?>" alt="flèche bas | <?= bloginfo('title'); ?>" class="fleche-bas">
-      </div>       
+      </div>
     </div>
   </div>
 </section>
 
-
 <section class="texte-article">
-    <h2>Visez la sérénité instantanée en cas de Colère </h2>
-    <p><strong>Formulez des affirmations positives </strong>spécifiques à la situation de colère, telles que "je choisis la paix intérieure" ou "Je contrôle ma réaction".<br>Répétez ces affirmations calmement pour vous-même afin de changer progressivement votre état d'esprit et d'instaurer une attitude plus constructive face à la colère.</p>
-    <p class="mb-5"><strong>Évasion Temporaire par l'imaginaire</strong> : Créez un refuge mental en imaginant un endroit sûr et paisible. Lorsque la colère survient, prenez une "pause imaginaire" en vous transportant mentalement vers cet endroit, permettant ainsi un éloignement temporaire émotionnel et la création d'un espace intérieur apaisé.</p>
+    <h2>Boostez votre Bien-Être : Les Secrets des Oméga-3 pour Apaiser l’Anxiété</h2>
+    <p><strong>Équilibrez votre alimentation : </strong>pour contrer l’anxiété, car ce que  vous mangez peut réellement faire la différence.</p>
+    <p><strong>Boostez avec des Nutriments Clés :</strong>  Intégrez des aliments riches en Oméga-3 tels que le poisson, les noix et les graines de lin pour favoriser une meilleure humeur.</p>
+    <p class="mb-5"><strong>Favorisez le Tryptophane : </strong> Optez pour des sources de tryptophane comme les œufs, le poulet, les produits laitiers et les légumineuses pour stimuler la production de sérotonine, améliorant ainsi votre bien-être mental.</p>
     <div class="img-article mb-5">
         <?php
-        $image_url = wp_get_attachment_image_src(61, 'full');
+        $image_url = wp_get_attachment_image_src(67, 'full');
         ?>
-        <img src="<?= $image_url[0]; ?>" alt="colere1 | <?= bloginfo('title'); ?>">
+        <img src="<?= $image_url[0]; ?>" alt="anxiete1 | <?= bloginfo('title'); ?>">
     </div>
 </section>
 
+
+
+
 <section class="texte-article">
-    <h2>  Effectuez des routines pour vous aider à atténuer la  colère</h2>
-    <p><strong>Établissez une routine</strong>, en effet un sommeil régulière et une routine journalère en définissant des heures fixes pour vous coucher et vous réveiller.</p>
-    <p class="mb-5"><strong>Pratique du Journaling</strong> : tenez un journal comme moyen d'explorer et d'exprimer vos émotions, y compris la colère. Prenez le temps chaque jour pour écrire sur vos sentiments :  les déclencheurs potentiels et les solutions envisageables.<br> Cette forme d'auto-réflexion peut vous aider à comprendre et à canaliser la colère de manière constructive, favorisant ainsi un état émotionnel plus équilibré.</p>
+    <h2>Libérez vous du Stress avec des Pratiques Bien-Être </h2>
+    <p><strong>Méditation Apaisante :</strong>Accordez vous quelques minutes chaque jour pour méditer, une pratique simple mais efficace pour alléger le fardeau de l’anxiété.</p>
+    <p class="mb-5"><strong>Marche Salvatrice :</strong>Une promenade quotidienne peut libérer des endorphines, les hormones du bonheur, apportant un soulagement naturel à l’anxiété.</p>
     <div class="img-article mb-5">
         <?php
-        $image_url = wp_get_attachment_image_src(62, 'full');
+        $image_url = wp_get_attachment_image_src(68, 'full');
         ?>
-        <img src="<?= $image_url[0]; ?>" alt="colere2 | <?= bloginfo('title'); ?>">
+        <img src="<?= $image_url[0]; ?>" alt="anxiete2 | <?= bloginfo('title'); ?>">
     </div>
 </section>
 
-<section class="texte-article">
-    <h2>Cultivez des Relations Positives pour Apaiser la Furie</h2>
-    <p><strong>Partagez vos sentiments de manière ouverte et honnête avec les personnes de confiance autour de vous :</strong> car la communication transparente prévient l’accumulation de la colère et favorise une compréhension mutuelle plus profonde.</p>
-    <p class="mb-5"><strong>Engagez vous dans des activités sociales plaisantes et apaisantes pour l’esprit : </strong>car ces interactions positives peuvent contrebalancer la tension émotionnelle en offrant des moments de détente et de connexion avec autrui.</p>
-    <div class="img-article mb-5">
-        <?php
-        $image_url = wp_get_attachment_image_src(63, 'full');
-        ?>
-        <img src="<?= $image_url[0]; ?>" alt="colere3 | <?= bloginfo('title'); ?>">
-    </div>
-</section>
 
 <div class="disclaimer">
-    <p>Intégrez ces méthodes naturelles dans votre quotidien pour maîtriser la colère, tout en restant attentif à vos besoins émotionnels. Consultez un professionnel de la santé pour un soutien personnalisé. Explorez nos articles pour des informations complémentaires sur la gestion de la colère et le bien-être émotionnel.</p>
+  <p>Trouvez le soulagement naturel de l’anxiété en adoptant de petits changements dans votre routine quotidienne. N’oubliez pas, il est crucial de consulter un professionnel de la santé pour des conseils adaptés à votre situation individuelle. Votre bien-être mental est une priorité.</p>
 </div>
 
 
@@ -74,7 +67,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="container pt-5 pb-5">
     <div class="row">      
       <div class="col-12">
@@ -189,4 +182,6 @@
   });
 </script>
 
+
 <?php get_footer(); ?>
+

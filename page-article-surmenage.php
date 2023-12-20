@@ -1,9 +1,9 @@
-<?php include 'header2.php'; ?>
+<?php /* Template Name: PageConseils */ include 'header2.php'; ?>
 
 <section class="banner banner-article d-flex justify-content-center align-items-center ">
   <!-- Contenu de la section accueil -->
   <div class="container-fluid p-0">
-    <?php $image_url = wp_get_attachment_url(56); ?>
+    <?php $image_url = wp_get_attachment_url(58); ?>
     <img 
       src="<?= $image_url; ?>"
       alt="banner-colere | <?= bloginfo('title'); ?>"
@@ -11,56 +11,61 @@
     />
     <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
       <div class="col-lg-9">
-        <h1>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</h1>
-        <h3>Découvrez <span class="text-vert">trois approches</span> simples mais puissantes pour apprivoisez votre colère. <br>Libérez-vous de votre colère et vivez une vie plus sereine dès maintenant !</h3>
+        <h1>Boostez votre Vitalité Et Evitez le Surmenage </h1>
+        <h3>Un Guide Complet de<span class="text-vert">Médecine Naturelle</span> pour Éradiquer la Fatigue et Dompter le Surmenage </h3><br>
         <?php
         $image_url = wp_get_attachment_image_src(40, 'full');
         ?>
         <img src="<?= $image_url[0]; ?>" alt="flèche bas | <?= bloginfo('title'); ?>" class="fleche-bas">
-      </div>       
+      </div>  
     </div>
   </div>
-</section>
-
+</section>    
 
 <section class="texte-article">
-    <h2>Visez la sérénité instantanée en cas de Colère </h2>
-    <p><strong>Formulez des affirmations positives </strong>spécifiques à la situation de colère, telles que "je choisis la paix intérieure" ou "Je contrôle ma réaction".<br>Répétez ces affirmations calmement pour vous-même afin de changer progressivement votre état d'esprit et d'instaurer une attitude plus constructive face à la colère.</p>
-    <p class="mb-5"><strong>Évasion Temporaire par l'imaginaire</strong> : Créez un refuge mental en imaginant un endroit sûr et paisible. Lorsque la colère survient, prenez une "pause imaginaire" en vous transportant mentalement vers cet endroit, permettant ainsi un éloignement temporaire émotionnel et la création d'un espace intérieur apaisé.</p>
+    <h2>Rééquilibrage Émotionnel par l'Énergie Vitale de la Nature</h2>
+    <p><strong>Passez du temps en plein air :</strong>entourez vous de verdure et profitez du soleil, la nature stimule la production d'endorphines, qui est l'hormone du bonheur.</p>
+    <p class="mb-5"><strong>Profitez d'une balade dans le parc :</strong>un pique-nique en forêt, ou simplement respirez l'air frais pour nourrir votre bien-être émotionnel et transformer la fatigue en vitalité positive.</p>
     <div class="img-article mb-5">
         <?php
-        $image_url = wp_get_attachment_image_src(61, 'full');
-        ?>
-        <img src="<?= $image_url[0]; ?>" alt="colere1 | <?= bloginfo('title'); ?>">
+        $image_url = wp_get_attachment_image_src(71, 'full');?>
+        <img src="<?= $image_url[0]; ?>" alt="fatigue1 | <?= bloginfo('title'); ?>">
     </div>
 </section>
 
 <section class="texte-article">
-    <h2>  Effectuez des routines pour vous aider à atténuer la  colère</h2>
-    <p><strong>Établissez une routine</strong>, en effet un sommeil régulière et une routine journalère en définissant des heures fixes pour vous coucher et vous réveiller.</p>
-    <p class="mb-5"><strong>Pratique du Journaling</strong> : tenez un journal comme moyen d'explorer et d'exprimer vos émotions, y compris la colère. Prenez le temps chaque jour pour écrire sur vos sentiments :  les déclencheurs potentiels et les solutions envisageables.<br> Cette forme d'auto-réflexion peut vous aider à comprendre et à canaliser la colère de manière constructive, favorisant ainsi un état émotionnel plus équilibré.</p>
+    <h2>Renforcement Émotionnel avec des Plantes Adaptogènes</h2>
+    <p><strong>Les herbes naturelles telles que le ginseng :</strong>la rhodiole et l'ashwagandha renforcent la résilience émotionnelle en aidant le corps à mieux faire face au stress et atténuent les effets néfastes du suraménagèrent.</p>
+    <p class="mb-5"><strong>Intégrez lès dans votre routine sous forme de tisanes: </strong> de suppléments, ou en cuisine, pour soutenir votre énergie émotionnelle.</p>
     <div class="img-article mb-5">
         <?php
-        $image_url = wp_get_attachment_image_src(62, 'full');
+        $image_url = wp_get_attachment_image_src(65, 'full');
         ?>
-        <img src="<?= $image_url[0]; ?>" alt="colere2 | <?= bloginfo('title'); ?>">
+        <img src="<?= $image_url[0]; ?>" alt="fatigue2 | <?= bloginfo('title'); ?>">
     </div>
 </section>
 
+
+
+
+
 <section class="texte-article">
-    <h2>Cultivez des Relations Positives pour Apaiser la Furie</h2>
-    <p><strong>Partagez vos sentiments de manière ouverte et honnête avec les personnes de confiance autour de vous :</strong> car la communication transparente prévient l’accumulation de la colère et favorise une compréhension mutuelle plus profonde.</p>
-    <p class="mb-5"><strong>Engagez vous dans des activités sociales plaisantes et apaisantes pour l’esprit : </strong>car ces interactions positives peuvent contrebalancer la tension émotionnelle en offrant des moments de détente et de connexion avec autrui.</p>
+    <h2>Harmonisation Émotionnelle avec la Créativité </h2>
+    <p><strong>Immergez vous dans des activités créatives telles que la peinture :</strong>l'écriture ou la pratique musicale, offrant ainsi des voies d'expression qui ont un effet apaisant sur l'esprit.</p>
+    <p><strong>La libération émotionnelle </strong>à travers ces formes d'expression créative crée un équilibre mental: offrant un moyen unique de transcender la fatigue émotionnelle en transformant les sentiments négatifs en une source d'inspiration positive.</p>
+    <p class="mb-5"><strong>Intégrez consciemment ces moments dans votre quotidien :</strong>l'acte créatif devient une source régénérante, nourrissant votre bien-être intérieur et contribuant à une perception plus lumineuse de la vie.</p>
     <div class="img-article mb-5">
         <?php
-        $image_url = wp_get_attachment_image_src(63, 'full');
+        $image_url = wp_get_attachment_image_src(72, 'full');
         ?>
-        <img src="<?= $image_url[0]; ?>" alt="colere3 | <?= bloginfo('title'); ?>">
+        <img src="<?= $image_url[0]; ?>" alt="fatigue3 | <?= bloginfo('title'); ?>">
     </div>
 </section>
+
+
 
 <div class="disclaimer">
-    <p>Intégrez ces méthodes naturelles dans votre quotidien pour maîtriser la colère, tout en restant attentif à vos besoins émotionnels. Consultez un professionnel de la santé pour un soutien personnalisé. Explorez nos articles pour des informations complémentaires sur la gestion de la colère et le bien-être émotionnel.</p>
+    <p>Incorporez ces approches naturelles à votre routine quotidienne pour apaiser la fatigue tout en restant attentif à vos besoins émotionnels. N'hésitez pas à solliciter l'avis d'un professionnel de la santé pour un soutien personnalisé. Consultez nos articles pour des conseils supplémentaires sur la gestion de la fatigue et le maintien d'un bien-être émotionnel.</p>
 </div>
 
 
@@ -74,7 +79,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="container pt-5 pb-5">
     <div class="row">      
       <div class="col-12">
@@ -188,5 +193,6 @@
     }
   });
 </script>
+
 
 <?php get_footer(); ?>

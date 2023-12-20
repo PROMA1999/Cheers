@@ -198,6 +198,15 @@ p{
   
 }
 
+
+.card-body p {
+ color: #000000; 
+} 
+
+a {
+ text-decoration: none;
+}
+
 #depression-titre{
   left: 2%;
   right: 68%;
@@ -208,6 +217,14 @@ p{
   right: 78%;
 }
 
+
+.hop {
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.hop:hover {
+  transform: translateY(-8px)
+}
 
 /* NEWSLETTER */
 
@@ -258,6 +275,7 @@ footer {
   flex: 1 1 200px;
   margin: 10px;
   text-align: center;
+  text-decoration: none;
 }
 
 .logo-rs {
@@ -267,7 +285,9 @@ footer {
   width: auto;
 }
 
-
+#lardinois{
+  color: #000000;
+}
 
 
 
@@ -386,10 +406,6 @@ h1 {
 
 
 
-
-
-
-
 /*fieldset {
   border: none;
   margin-bottom: 20px;
@@ -460,7 +476,7 @@ legend {
 }
 
 .img-article img {
-  max-width: 40%;
+  max-width: 70%;
   display: block;
   margin-left: auto; /* Centre l'image horizontalement */
   margin-right: auto;
@@ -485,4 +501,14 @@ legend {
   margin-bottom: 7%;
   margin-left: 40%;
   margin-right: 20%;
+  font-style: italic;
+}
+
+
+
+/* Ajustez cette valeur selon vos besoins */
+
+.mentions{
+  padding-top: 10%;
+  padding-bottom: 10%;
 }

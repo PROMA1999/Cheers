@@ -14,8 +14,10 @@
             <h6>Rue des Lauriers 100</h6>
             <h6>Bruxelles, 1170</h6>
         </div>
-        <div class="col-lg-2 col-12 footer-section">
-            <h6>Mentions légales</h6>
+        <div class="col-lg-2 col-12 footer-section" >
+            <a href="<?= home_url('/mentions-legales'); ?>">
+                <h6 id="lardinois">Mentions légales</h6>
+            </a>
         </div>
         <div class="col-lg-2 col-12 footer-section">
             <h6>&copy; <?php echo date('Y'); ?> Cheers Tous droits réservés.</h6>
