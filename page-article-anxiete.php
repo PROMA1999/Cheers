@@ -1,4 +1,4 @@
-<?php /* Template Name: PageConseils */ include 'header2.php'; ?>
+<?php include 'header2.php'; ?>
 
 <section class="banner banner-article d-flex justify-content-center align-items-center ">
   <!-- Contenu de la section accueil -->

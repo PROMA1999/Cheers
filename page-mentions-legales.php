@@ -27,7 +27,7 @@
         <p>Ce site est proposé en utilisant des informations disponibles et à des fins informatives uniquement. Les informations fournies ne remplacent en aucun cas les conseils professionnels. L'utilisation du site est soumise à l'acceptation des conditions d'utilisation.</p>
         
         <h3>Traitement des Données :</h3>
-        <p>Nous traitons les données que vous nous fournissez lorsque vous passez notre questionnaire, lorsque vous vous inscrivez à notre newsletter ou lorsque vous prenez contact avec nous via le formulaire en ligne. Ces données concernent votre nom et e-mail...</p>
+        <p>Nous traitons les données que vous nous fournissez lorsque vous passez notre questionnaire, lorsque vous vous inscrivez à notre newsletter ou lorsque vous prenez contact avec nous via le formulaire en ligne. Ces données concernent votre nom et e-mail.</p>
         
         <h3>Nous ne vendons vos données en aucun cas :</h3>
         <p>Nous ne vendons pas vos données à des tiers.</p>

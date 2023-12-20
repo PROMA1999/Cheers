@@ -1,11 +1,15 @@
 /*
 Theme Name: Cheers
 */
+
+
+
 @import url("font/stylesheet.css");
 
 
 
 
+/*Titres, p, navbar, logos, boutons*/
 
 body {
   overflow-x: hidden;
@@ -16,12 +20,11 @@ body {
 }
 
 h1{
-  font-weight: 900;
   font-family: 'Gilroy-Heavy', sans-serif;
 }
 
 h2{
-  font-weight: 600;
+  font-family: 'Gilroy-Bold', sans-serif;
   font-size: 40px;
   color: #67844C;
   margin-bottom: 20px;
@@ -51,7 +54,9 @@ p{
 }
 
 .navbar {
-  background-color: rgba(142, 74, 74, 0);
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
@@ -64,14 +69,14 @@ p{
 }
 
 .logo{
-  width: 12%;
+  width: 15%;
   margin: 6px; /* Ajoute une marge autour du logo */
   padding: 6px; /* Ajoute un espacement intérieur autour du logo */
 }
 
 .logonoir{
-  width: 12%;
-  height: 12%;
+  width: 15%;
+  height: 15%;
   margin: 6px; /* Ajoute une marge autour du logo */
   padding: 6px; /* Ajoute un espacement intérieur autour du logo */
 }
@@ -113,6 +118,7 @@ p{
 .btn-order2:hover, .btn-order2:focus {
   color: #ef7d53; /* Couleur du texte */
   border-color: #ef7d53;
+  
   background-color: rgba(255, 255, 255, 0); /* Fond blanc avec opacité réduite */
 }
 
@@ -165,9 +171,17 @@ p{
   padding-right: 60px;
 }
 
-#colonne2-apropos{
+#colonne2-apropos {
   margin-left: 50px;
 }
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  #colonne2-apropos {
+    margin-left: 0;
+  }
+}
+
 
 .text-sand-background {
 
@@ -226,6 +240,9 @@ a {
   transform: translateY(-8px)
 }
 
+
+
+
 /* NEWSLETTER */
 
 .subscription-section {
@@ -254,6 +271,7 @@ a {
   display: flex;
 
 }
+
 
 /* FOOTER */
 
@@ -378,11 +396,11 @@ h1 {
   transition: 0.5s;
   background-color: #67844C;
   border-width: 3px;
-  border-radius: 50px; /* Modification pour un arrondi plus prononcé */
-  border-color: #67844C; /* Assurez-vous que la couleur de la bordure correspond au fond */
-  padding: 10px 20px; /* Ajout de padding pour une meilleure apparence */
-  font-size: 16px; /* Taille de police ajustable selon vos besoins */
-  cursor: pointer; /* Change le curseur en main lors du survol */
+  border-radius: 50px;
+  border-color: #67844C;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #result {
@@ -420,6 +438,17 @@ legend {
   margin-bottom: 10px;
 }
 */
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Style-profil*/
@@ -506,9 +535,12 @@ legend {
 
 
 
-/* Ajustez cette valeur selon vos besoins */
+/*Mentions légales*/
 
 .mentions{
   padding-top: 10%;
   padding-bottom: 10%;
 }
+
+
+
