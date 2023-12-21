@@ -24,7 +24,7 @@
         </div>
         <div class="col-lg-2 col-12 footer-section">
             <a href="https://www.instagram.com">
-                <?php $image_url = wp_get_attachment_url(39); ?>
+                <?php $image_url = wp_get_attachment_url(143); ?>
                 <img src="<?=$image_url;?>" class="logo-rs"/> 
             </a>
             <a href="https://www.tiktok.com/fr/">

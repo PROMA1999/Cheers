@@ -14,7 +14,7 @@
             <div class="col-12">
                 <h1 id="titre-blanc" class="text-responsive">RESSENTEZ, ÉVALUEZ,<br> SANTÉ !</h1>
                 <h3 id="titre-blanc" class="mb-5 text-responsive">Évaluez votre santé mentale grâce à notre questionnaire<br> et trouvez les solutions qui vous correspondent le mieux !</h3>
-                <a href="<?= home_url('/quiz'); ?>" class="btn btn-order btn-outline-light rounded-pill btn-responsive">Commencer le test</a>
+                <a href="<?= home_url('/questionnaire'); ?>" class="btn btn-order btn-outline-light rounded-pill btn-responsive">Commencer le test</a>
             </div>
         </div>
     </div>
@@ -194,23 +194,51 @@
 
   <!--NEWSLETTER-->
 
-  <section class="subscription-section">
+  <section class="subscription-section" id="newsletter">
       <div class="container">
           <div class="row justify-content-center">
               <div class="col-md-8 text-center">
                   <div class="subscription-box">
                       <h2 id="titre-blanc" class="mb-5">Abonnez-vous pour être au courant de nos prochains articles !</h2>
-                      <form class="subscription-form">
-                          <input type="email" class="form-control rounded-pill" placeholder="Introduisez votre e-mail" required>
-                          <button type="submit" class="btn btn-order btn-outline-light rounded-pill">Valider</button>
+                      <form action="<?php echo esc_url(home_url('/index#newsletter')); ?>" method="POST" class="subscription-form">
+                          <input type="email" name="email" class="form-control rounded-pill" placeholder="Introduisez votre e-mail" required>
+                          <button type="submit" onclick="showConfirmation()" class="btn btn-order btn-outline-light rounded-pill">Valider</button>
                       </form>
                   </div>
               </div>
           </div>
       </div>
   </section>
-  
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-</body>
 
-<?php get_footer(); ?>
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['email'])) {
+      $email = sanitize_email($_POST['email']);
+
+      // Créez un tableau associatif avec les données du formulaire
+      $commentdata = array(
+          'comment_author_email' => $email,
+          'comment_content' => 'S\'inscrire à la newsletter',
+          'comment_type' => 'inscription-newsletter', // Un type de commentaire spécifique pour le distinguer
+          'comment_approved' => 1, // Approuvez automatiquement le commentaire
+      );
+
+      // Insérez le commentaire dans la base de données WordPress
+      $comment_id = wp_insert_comment($commentdata);
+
+      if ($comment_id) {
+          // Redirection vers une page de confirmation ou autre
+          wp_redirect(home_url('/'));
+          exit();
+      } 
+  }
+  ?>
+
+  <script>
+      function showConfirmation() {
+          alert('Demande d\'inscription confirmée, santé !');
+      }
+  </script>
+    
+  </body>
+
+  <?php get_footer(); ?>
