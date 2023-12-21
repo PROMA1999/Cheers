@@ -116,24 +116,23 @@ $quizList = new WP_Query([
     const quizContainer = document.getElementById('quizcontainer');
     quizContainer.innerHTML = `<div class="result-content">${resultText}</div>`;
 
-    // Création et insertion de la div list-result
     const listResultHtml = `
         <div class="list-result">
           <p><strong>Trouver de l’aide :</strong></p>
           <ul>
-              <li>Psychiatres</li>
-              <li>Psychologues</li>
+          <a href="https://www.doctoranytime.be/s/psychiatre/bruxelles"><li>Psychiatres</li></a>
+          <a href="https://www.doctoranytime.be/s/psychologue/bruxelles"><li>Psychologues</li></a>
           </ul>
           <p><strong>Vous pourriez être intéressé par les articles suivants :</strong></p>
           <ul>
-            <a href="/a>
-              <li>Se Libérer De La Dépression : 2 Méthodes Naturelles à Essayer</li>
-              <li>Apaisez l’Anxiété en Nourrissant Votre Esprit</li>
-              <li>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</li>
-              <li>Boostez votre Vitalité Et Evitez le Surmenage</li>
+            
+          <a href="<?= home_url('/article-depression'); ?>"><li>Se Libérer De La Dépression : 2 Méthodes Naturelles à Essayer</li></a>
+          <a href="<?= home_url('/article-anxiete'); ?>"><li>Apaisez l’Anxiété en Nourrissant Votre Esprit</li></a>
+          <a href="<?= home_url('/article-colere'); ?>"><li>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</li></a>
+          <a href="<?= home_url('/article-surmenage'); ?>"><li>Boostez votre Vitalité Et Evitez le Surmenage</li></a>
           </ul>
         </div>
-    `;
+      `;
     quizContainer.insertAdjacentHTML('afterend', listResultHtml);
     }
 

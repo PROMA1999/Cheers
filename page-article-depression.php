@@ -1,4 +1,4 @@
-<?php /* Template Name: PageConseils */ include 'header2.php'; ?>
+<?php include 'header2.php'; ?>
 
 <section class="banner banner-article d-flex justify-content-center align-items-center ">
   <!-- Contenu de la section accueil -->
@@ -12,7 +12,7 @@
     <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
       <div class="col-lg-9">
         <h1>Se Libérer De La Dépression : 2 Méthodes Naturelles à Essayer</h1>
-        <h3>Découvrez <span class="text-vert">deux approches</span> simples mais puissantes pour traiter la dépression. <br><span class="text-vert">sans médicaments.</h3>
+        <h3>Découvrez <span class="text-vert">deux approches</span> simples mais puissantes pour traiter la dépression <br><span class="text-vert">sans médicaments.</h3>
         <?php
         $image_url = wp_get_attachment_image_src(40, 'full');
         ?>

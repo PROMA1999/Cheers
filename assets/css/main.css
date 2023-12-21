@@ -317,20 +317,18 @@ footer {
 /*Style-quiz*/
 
 .body-quiz {
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  box-sizing: border-box;
+  flex-direction: column; /* Change la direction du flex pour être verticale */
+  align-items: center; /* Centre horizontalement les enfants */
+  justify-content: center; /* Centre verticalement les enfants */
 }
+
 .quiz-container {
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
+  max-width: 100%;
   width: 800px;
-  height: 540px;
+  min-height: 540px;
   padding: 40px;
   background-color: #ebe3d5;
   border-radius: 5px;
@@ -406,7 +404,6 @@ h1 {
   background-color: #ebe3d5;
   padding: 60px;
   border-radius: 15px;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -416,11 +413,21 @@ h1 {
   overflow-y: auto;
 }
 
-
 .result-content {
   text-align: left;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
+.list-result {
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.list-result ul {
+  list-style-type: disc; /* Style de puce (disc, circle, square, etc.) */
+  padding-left: 20px; /* Espace à gauche pour l'indentation des puces */
+}
 
 
 
