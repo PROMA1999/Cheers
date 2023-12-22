@@ -120,16 +120,16 @@ $quizList = new WP_Query([
         <div class="list-result">
           <p><strong>Trouver de l’aide :</strong></p>
           <ul>
-          <a href="https://www.doctoranytime.be/s/psychiatre/bruxelles"><li>Psychiatres</li></a>
-          <a href="https://www.doctoranytime.be/s/psychologue/bruxelles"><li>Psychologues</li></a>
+          <a href="https://www.doctoranytime.be/s/psychiatre/bruxelles"><li class="lien-vert">Psychiatres</li></a>
+          <a href="https://www.doctoranytime.be/s/psychologue/bruxelles"><li class="lien-vert">Psychologues</li></a>
           </ul>
           <p><strong>Vous pourriez être intéressé par les articles suivants :</strong></p>
           <ul>
             
-          <a href="<?= home_url('/article-depression'); ?>"><li>Se Libérer De La Dépression : 2 Méthodes Naturelles à Essayer</li></a>
-          <a href="<?= home_url('/article-anxiete'); ?>"><li>Apaisez l’Anxiété en Nourrissant Votre Esprit</li></a>
-          <a href="<?= home_url('/article-colere'); ?>"><li>Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</li></a>
-          <a href="<?= home_url('/article-surmenage'); ?>"><li>Boostez votre Vitalité Et Evitez le Surmenage</li></a>
+          <a href="<?= home_url('/article-depression'); ?>"><li class="lien-vert">Se Libérer De La Dépression : 2 Méthodes Naturelles à Essayer</li></a>
+          <a href="<?= home_url('/article-anxiete'); ?>"><li class="lien-vert">Apaisez l’Anxiété en Nourrissant Votre Esprit</li></a>
+          <a href="<?= home_url('/article-colere'); ?>"><li class="lien-vert">Apprivoisez la Colère Naturellement pour Retrouver l’Harmonie</li></a>
+          <a href="<?= home_url('/article-surmenage'); ?>"><li class="lien-vert">Boostez votre Vitalité Et Evitez le Surmenage</li></a>
           </ul>
         </div>
       `;

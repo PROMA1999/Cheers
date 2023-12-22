@@ -3,6 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Site de santé mentale et de médecine holistique"/>
     <title>Cheers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -12,7 +13,7 @@
 <?php wp_body_open(); ?>
 <nav class="navbar navbar-expand-lg navbar-light w-100">
     <div class="container-fluid">
-        <a href="<?= home_url('/index'); ?>" class="navbar-brand">
+        <a href="<?= home_url('/'); ?>" class="navbar-brand">
             <?php $image_url = wp_get_attachment_url(35); ?>
             <img src="<?=$image_url;?>" class="logonoir"/>
         </a>
@@ -25,7 +26,7 @@
                     <a class="btn btn-order2 btn-outline-dark rounded-pill" href="<?= home_url('/questionnaire'); ?>">Quiz</a>
                 </li>
                 <li class="nav-item pe-4">
-                    <a href="https://cheers.emu.isfsc.be/index#nos-conseils" class="btn btn-order2 btn-outline-dark rounded-pill">Nos conseils</a>
+                    <a href="https://cheers.emu.isfsc.be#nos-conseils" class="btn btn-order2 btn-outline-dark rounded-pill">Nos conseils</a>
                 </li>
                 <li class="nav-item pe-4">
                     <a class="btn btn-order2 btn-outline-dark rounded-pill" href="<?= home_url('/profil'); ?>">Profil</a>

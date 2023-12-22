@@ -17,6 +17,7 @@ body {
   padding: 0;
   max-width: 1920px;
   font-family: 'Gilroy-Regular', sans-serif;
+
 }
 
 h1{
@@ -54,9 +55,13 @@ p{
 }
 
 .navbar {
-  position: absolute;
-  z-index: 1;
   background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  margin-top: 25px;
 }
 
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
@@ -67,6 +72,7 @@ p{
 .nav-item {
   margin-right: 15px; /* Ajustez cette valeur selon vos besoins */
 }
+
 
 .logo{
   width: 15%;
@@ -122,6 +128,9 @@ p{
   background-color: rgba(255, 255, 255, 0); /* Fond blanc avec opacité réduite */
 }
 
+.lien-vert{
+  color: #67844C;
+}
 
 
 /* ACCUEIL */
@@ -137,10 +146,21 @@ p{
 #banner-image {
   width: 100%; /* Largeur complète de la section */
   height: 100%; /* Hauteur complète de la section */
+
   object-fit: cover; /* Garantit que l'image couvre tout */
 }
 
+@media (max-width: 994px) {
+  .banner{
+    height: 77vh;
+  }
+}
 
+@media (max-width: 994px) {
+  .banner{
+    height: 77vh;
+  }
+}
 
 /* A PROPOS */
 
@@ -231,6 +251,13 @@ a {
   right: 78%;
 }
 
+@media (max-width: 994px) {
+  #depression-titre #colere-titre{
+    left: 0;
+    right: 68%;
+    top: 0.5px;
+  }
+}
 
 .hop {
   transition: transform 0.3s ease-in-out;
@@ -456,8 +483,8 @@ legend {
 /*Style-profil*/
 
 .contenu-profil {
-  margin-top: 30%; /* Espace au-dessus du conteneur */
-  margin-bottom: 30%; /* Espace en dessous du conteneur */
+  margin-top: 10%; /* Espace au-dessus du conteneur */
+  margin-bottom: 10%; /* Espace en dessous du conteneur */
 }
 
 
@@ -523,6 +550,15 @@ legend {
   margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
 }
 
+@media (max-width: 994px) {
+  .article-cover {
+    height: 100vh;
+    width: 100%; /* Ajoutez ceci si ce n'est pas déjà le cas */
+    object-fit: cover; /* Assurez-vous que l'image couvre le conteneur sans se déformer */
+  }
+}
+
+
 .img-article img {
   max-width: 70%;
   display: block;
@@ -563,3 +599,53 @@ legend {
 
 
 
+/*404*/
+
+.error-container {
+  text-align: center;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 10%;
+ 
+}
+
+.titre-error {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end; /* Aligner les éléments sur le bas */
+  margin: 0;
+}
+
+
+.error-text {
+  line-height: 1.5;
+  margin-top: 80px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.side-image {
+  display: inline-block;
+}
+
+.espace-error{
+  font-size: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left img {
+  width: 270px; /* Ajustez la largeur selon vos besoins */
+  margin-right: 50px; /* Ajustez la marge selon vos besoins */
+  transform: scalex(-1);
+}
+
+.right img {
+  width: 270px; /* Ajustez la largeur selon vos besoins */
+  margin-left: 50px; /* Ajustez la marge selon vos besoins */
+}

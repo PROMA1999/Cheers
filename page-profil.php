@@ -5,23 +5,12 @@
         <div class="row">
             <div class="col-md-4">
             <div class="left-panel">
-                <img src="https://via.placeholder.com/150" alt="Profile" />
-                <p><strong><?php
-                            $user = wp_get_current_user();
-                            if ( $user->exists() ) { // Vérifie si l'utilisateur est connecté
-                                echo esc_html($user->user_login);
-                            } else {
-                                echo 'Utilisateur non connecté.';
-                            }
-                            ?></strong></p>
-                                            <p><?php
-                            $user = wp_get_current_user();
-                            if ( $user->exists() ) { // Vérifie si l'utilisateur est connecté
-                                echo esc_html($user->user_login) . '@gmail.com';
-                            } else {
-                                echo 'Utilisateur non connecté.';
-                            }
-                            ?></p>
+            <?php
+        $image_url = wp_get_attachment_image_src(147, 'full');
+        ?>
+        <img src="<?= $image_url[0]; ?>" alt="Profil | <?= bloginfo('title'); ?>">
+                <p><strong>Clara Dupain</strong></p>
+                <p>claradup@gmail.com</p>
             <button class="btn btn-order2 btn-outline-dark rounded-pill">Modifier la photo</button>
             </div>
             </div>

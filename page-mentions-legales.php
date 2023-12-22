@@ -10,7 +10,7 @@
         <p><strong>Nom :</strong> Cheers <br>
             <strong>Forme Juridique :</strong> SPRL  <br>
             <strong>Adresse</strong> 100 rue des Lauriers  <br>1170, Bruxelles<br>
-            <strong>Email :</strong> <a href="mailto:infos@cheers.com">infos@cheers.com</a><br>
+            <strong>Email :</strong> <a href="mailto:infos@cheers.com" class="lien-vert">infos@cheers.com</a><br>
             <strong>Téléphone:</strong>+324867594  <br>
             <strong>Email :</strong>infos@cheers.com<br>
             <strong>Numéro BCE :</strong>0123.456.789<br>
@@ -22,7 +22,7 @@
             <p><strong>Le site est hébergé par :</strong> ISFSC <br>
             <strong>Adresse :</strong> 111 rue de la Poste <br>
             <strong>Téléphone :</strong> +32 2 227 59 00 <br>
-            <strong>Email :</strong> <a href="mailto:info@isfsc.be">info@isfsc.be</a>
+            <strong>Email :</strong> <a href="mailto:info@isfsc.be" class="lien-vert">info@isfsc.be</a>
             </p>
         </div>
     </section>
@@ -36,7 +36,7 @@
             <p>
                 Nous traitons les données que vous nous fournissez lorsque vous passez notre questionnaire, lorsque vous vous inscrivez à notre newsletter ou lorsque vous prenez contact avec nous via le formulaire en ligne. Ces données concernent votre nom et e-mail.
                 Nous traitons en outre les "données de circulation" des visiteurs sur notre site web. Ce qui nous amène à enregistrer l'adresse IP de votre ordinateur, et à analyser le comportement de navigation des visiteurs sur notre site web. Nous utilisons ces données dans l'unique but d'améliorer nos services ainsi que le contenu de notre site web.
-                Vous pouvez à tout moment demander la suppression de vos données en nous contactant à l'adresse e-mail <a href="mailto:infos@cheers.com">infos@cheers.com</a>.
+                Vous pouvez à tout moment demander la suppression de vos données en nous contactant à l'adresse e-mail <a href="mailto:infos@cheers.com" class="lien-vert">infos@cheers.com</a>.
             </p>
  
             <h3>Durée de Conservation des Données :</h3>

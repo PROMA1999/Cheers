@@ -235,9 +235,28 @@
 
   <script>
       function showConfirmation() {
-          alert('Demande d\'inscription confirmée, santé !');
+          alert('Inscription confirmée, santé !');
       }
   </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var url = window.location.href;
+    if (document.body.classList.contains('home')) {
+        document.querySelector('.navbar').style.position = 'absolute';
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var path = window.location.pathname;
+    if (path.includes('/article-')) {
+        document.querySelector('.navbar').style.position = 'absolute';
+    }
+});
+</script>
+
     
   </body>
 

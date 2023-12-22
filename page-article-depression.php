@@ -8,6 +8,7 @@
       src="<?= $image_url; ?>"
       alt="banner-depression | <?= bloginfo('title'); ?>"
       style= "width: 100%;"
+      class= "article-cover"
     />
     <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
       <div class="col-lg-9">
