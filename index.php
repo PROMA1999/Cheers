@@ -4,11 +4,12 @@
    <!--SECTION ACCUEIL-->
   <section class="banner d-flex justify-content-center align-items-center">
     <div class="container-fluid p-0">
-        <?php $image_url = wp_get_attachment_url(60); ?>
+        <?php $image_url = wp_get_attachment_url(148); ?>
         <img 
             src="<?= $image_url; ?>"
             alt="plage | <?= bloginfo('title'); ?>"
-            class="img-fluid" style="margin-top: 100px;"
+            style= "width: 100%;"
+            class= "cover"
         />
         <div class="row position-absolute top-50 start-50 translate-middle text-center w-100">
             <div class="col-12">
@@ -200,7 +201,7 @@
               <div class="col-md-8 text-center">
                   <div class="subscription-box">
                       <h2 id="titre-blanc" class="mb-5">Abonnez-vous pour être au courant de nos prochains articles !</h2>
-                      <form action="<?php echo esc_url(home_url('/index#newsletter')); ?>" method="POST" class="subscription-form">
+                      <form action="<?php echo esc_url(home_url('#newsletter')); ?>" method="POST" class="subscription-form">
                           <input type="email" name="email" class="form-control rounded-pill" placeholder="Introduisez votre e-mail" required>
                           <button type="submit" onclick="showConfirmation()" class="btn btn-order btn-outline-light rounded-pill">Valider</button>
                       </form>

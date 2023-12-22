@@ -1,14 +1,13 @@
 <?php include 'header2.php'; ?>
 
-<section class="banner banner-article d-flex justify-content-center align-items-center ">
-  <!-- Contenu de la section accueil -->
+<section class="banner banner-articles d-flex justify-content-center align-items-center ">
   <div class="container-fluid p-0">
     <?php $image_url = wp_get_attachment_url(58); ?>
     <img 
       src="<?= $image_url; ?>"
       alt="banner-colere | <?= bloginfo('title'); ?>"
       style= "width: 100%;"
-      class= "article-cover"
+      class= "cover"
     />
     <div class="titre-article row position-absolute top-50 start-50 translate-middle w-100">
       <div class="col-lg-9">

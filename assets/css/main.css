@@ -135,32 +135,23 @@ p{
 
 /* ACCUEIL */
 
-
-.banner {
+.banner{
   position: relative;
-  height: 100vh; /* Hauteur de la fenêtre de visualisation */
+  height: 100vh;
   width: 100%; /* Largeur complète */
   overflow: hidden; /* Cache les débordements */
-}
-
-#banner-image {
-  width: 100%; /* Largeur complète de la section */
-  height: 100%; /* Hauteur complète de la section */
-
-  object-fit: cover; /* Garantit que l'image couvre tout */
+  
 }
 
 @media (max-width: 994px) {
-  .banner{
-    height: 77vh;
+  .cover {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
-@media (max-width: 994px) {
-  .banner{
-    height: 77vh;
-  }
-}
+
 
 /* A PROPOS */
 
@@ -536,6 +527,10 @@ legend {
 
 /*Style-articles*/
 
+.banner-articles{
+  margin-bottom: 40px;
+}
+
 .titre-article {
   margin-top: 8%;
   margin-left: 4%; /* Décale la colonne vers la droite */ 
@@ -544,18 +539,6 @@ legend {
 .texte-article {
   margin-left: 5%;
   margin-right: 15%;
-}
-
-.banner-article {
-  margin-bottom: 40px; /* Ajustez cette valeur selon vos besoins */
-}
-
-@media (max-width: 994px) {
-  .article-cover {
-    height: 100vh;
-    width: 100%; /* Ajoutez ceci si ce n'est pas déjà le cas */
-    object-fit: cover; /* Assurez-vous que l'image couvre le conteneur sans se déformer */
-  }
 }
 
 
