@@ -76,7 +76,7 @@ p{
 
 .logo{
   width: 15%;
-  margin: 6px; /* Ajoute une marge autour du logo */
+  margin: 6px;
   padding: 6px; /* Ajoute un espacement intérieur autour du logo */
 }
 
@@ -243,10 +243,20 @@ a {
 }
 
 @media (max-width: 994px) {
-  #depression-titre #colere-titre{
+  #depression-titre{
     left: 0;
-    right: 68%;
+    right: 65%; /* Ajustez cette valeur selon les besoins */
     top: 0.5px;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+  }
+}
+
+@media (max-width: 994px) {
+    #colere-titre {
+    left: 0;
+    right: 77%; /* Ajustez cette valeur selon les besoins */
+    top: 0.5px;
+    white-space: nowrap; /* Empêche le retour à la ligne */
   }
 }
 
