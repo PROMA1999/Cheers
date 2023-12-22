@@ -508,9 +508,9 @@ legend {
 
 .right-panel {
   border-radius: 30px; /* Augmentation du rayon de bordure */
-  padding: 75px; /* Marge intérieure augmentée */
+  padding: 60px; /* Marge intérieure augmentée */
   background-color: #ebe3d5;
-  height: 70vh; /* Hauteur ajustée */
+  min-height: 70vh; /* Hauteur ajustée */
 }
 
 .right-panel h2 {
